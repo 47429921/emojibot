@@ -13,13 +13,13 @@ client.on('ready', () => {
   let statuses = [
       `Working on ${client.guilds.size} servers`,
       "Enter !!help for help.",
-      'News: new command !!serverinfo',
+      'News: new command !!say',
       'Join discord server now!',
-      'If you can please donate https://www.patreon.com/EmojiBot',
-      'Thanks for Fauzh#9487 for help',
+      'If you can please donate https://donatebot.io/checkout/642985085418733569',
+      'Thanks for Fauzh#9487 凱恩Kane#5384 for help',
       'Made by 青楓OuO#5224',
       'Vote me now!',
-      `Have ${client.guilds.membercount} users`
+      'ouo?'
   ]
   
   setInterval(function() {
@@ -53,8 +53,12 @@ defaultChannel.send({embed: {
         value: "[Click me](www.google.com)"
       },
       {
-        name: "suppot?",
+        name: "Suppot?",
         value: "[Join Now!](https://discord.gg/AFGqm5f)"
+      },
+      {
+        name: "Donate!",
+        value: "[Donate](https://donatebot.io/checkout/642985085418733569)"
       }
 	  
 ],
