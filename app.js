@@ -269,4 +269,4 @@ if (!message.member.hasPermission("KICK_MEMBERS")) {
 
 
 });
-client.login(config.token);
+client.login(process.env.BOT_TOKEN);
