@@ -1,0 +1,15 @@
+{
+  "name": "501-chat",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "discord.js": "^11.5.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "ping"
+  },
+  "author": "青楓OuO",
+  "license": "ISC"
+}
