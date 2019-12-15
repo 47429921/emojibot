@@ -74,7 +74,7 @@ defaultChannel.send({embed: {
  });
 
 client.on("message", async message => {
-    var roll = (Math.floor(Math.random() * 18) + 1);
+    var roll = (Math.floor(Math.random() * 40) + 1);
     if (roll == 1) {
         message.react("601733169909071883"); //老乾家族同樂區
     }
@@ -126,8 +126,56 @@ client.on("message", async message => {
     if (roll == 17) {
         //blank
     }
-    if (roll == 18) {
+    if (roll == 30) {
         message.react("625208023547379712"); //601 chatting
+    }
+   if (roll == 19) {
+        //blank
+    }
+	if (roll == 20) {
+        //blank
+    }
+	if (roll == 21) {
+        //blank
+    }
+	if (roll == 22) {
+        //blank
+    }
+	if (roll == 23) {
+        //blank
+    }
+	if (roll == 24) {
+        //blank
+    }
+	if (roll == 25) {
+        //blank
+    }
+	if (roll == 26) {
+        //blank
+    }
+	if (roll == 27) {
+        //blank
+    }
+	if (roll == 28) {
+        //blank
+    }
+	if (roll == 29) {
+        //blank
+    }
+	if (roll == 18) {
+        //blank
+    }
+	if (roll == 31) {
+        //blank
+    }
+	if (roll == 32) {
+        //blank
+    }
+	if (roll == 33) {
+        //blank
+    }
+	if (roll == 40) {
+        //blank
     }
 }); 
 
