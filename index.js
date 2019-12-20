@@ -50,7 +50,7 @@ defaultChannel.send({embed: {
   description: "I will help you to add emoji!",
   fields: [{
         name: "Vote me!",
-        value: "[Click me](www.google.com)"
+        value: "[Click me](https://top.gg/bot/650246586445594625/vote)"
       },
       {
         name: "Suppot?",
@@ -312,7 +312,7 @@ if (!message.member.hasPermission("KICK_MEMBERS")) {
 
     if (command === "addemoji") {
         const sm = args.join(" ");
-        client.channels.get("650257003192516630").send(`${message.author.username} give emoji:`, sm);
+        client.channels.get("650257003192516630").send(`${message.author.username} give emoji: ${sm}`);
     }
 
 
