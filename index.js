@@ -313,6 +313,7 @@ if (!message.member.hasPermission("KICK_MEMBERS")) {
     if (command === "addemoji") {
         const sm = args.join(" ");
         client.channels.get("650257003192516630").send(`${message.author.username} give emoji: ${sm}`);
+	message.channel.send(`Your emoji we will add Thank you!`)
     }
 
 
