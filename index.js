@@ -66,12 +66,11 @@ defaultChannel.send({embed: {
       icon_url: 'https://yt3.ggpht.com/-HZiKlwM2SWA/AAAAAAAAAAI/AAAAAAAAAAA/w_a9sYsYiOE/s108-c-k-c0x00ffffff-no-rj-mo/photo.jpg',
       text: "Made by 青楓OuO#5224"
 }}});
-	client.messages.get('657771163820228618').edit(`目標:100個伺服器 現在有${client.guilds.size}個伺服器`)
+	client.channels.get("650257003192516630").then(() =>client.messages.get('657771163820228618').edit(`目標:100個伺服器 現在有${client.guilds.size}個伺服器`));
  });
  client.on("guildDelete", guild => {
   // this event triggers when the bot is removed from a guild.
   console.log(`我已經離開了 ${guild.name} id: (id: ${guild.id}) 此群還有 ${guild.memberCount} 人`);
-  client.user.setActivity(`Working on ${client.guilds.size} servers`);
  });
 
 client.on("message", async message => {
