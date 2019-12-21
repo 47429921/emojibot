@@ -112,7 +112,7 @@ client.on("message", async message => {
         message.react("625314126872182814"); //601 chatting
     }
     if (roll == 13) {
-        //blank
+        //blank1
     }
     if (roll == 14) {
         //blank
