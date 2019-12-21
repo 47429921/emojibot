@@ -177,6 +177,12 @@ client.on("message", async message => {
 	if (roll == 40) {
         //blank
     }
+	if (roll == 41) {
+         message.react("654081912780095518"); //etp
+    }
+	if (roll == 44) {
+         message.react("654081992643706899"); //etp
+    }
 }); 
 
 client.on("message", async message => {
