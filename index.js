@@ -323,7 +323,8 @@ if (!message.member.hasPermission("KICK_MEMBERS")) {
 	message.channel.send(`Your emoji we will add Thank you!`)
     }
  if (command === "servers") {
-	 message.channel.send(`Working on ${client.guilds.size} servers`)
+	 message.channel.send(`Working on ${client.guilds.size} servers`);
+ }
 
 
 
