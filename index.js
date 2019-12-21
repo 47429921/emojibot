@@ -291,6 +291,7 @@ if (command === "say") {
   
     if (command === "kick") {
     const member = message.mentions.members.first()
+    message.react("656567727942795267");
 
     if (!member) {
       return message.reply(
