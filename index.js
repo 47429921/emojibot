@@ -1,17 +1,7 @@
 ﻿const Discord = require('discord.js');
 const client = new Discord.Client();
 const config = require("./config.json");
-const DBL = require("/dblapi.js");
-const dbl = new DBL('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjI2NDgxMTYxMzcwODc0Njc1MiIsImJvdCI6dHJ1ZSwiaWF0IjoxNDgzMDk5MjAwfQ.8tpNASxdSsfkVF7YparhyV1Ouy5ORQ3AM2jitd_Y-PI', client);
 
-// Optional events
-dbl.on('posted', () => {
-  console.log('Server count posted!');
-});
-
-dbl.on('error', e => {
- console.log(`Oops! ${e}`);
-});
 
 client.on('ready', () => {
     console.log(`登入成功 ${client.user.tag}`);
