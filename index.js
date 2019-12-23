@@ -266,11 +266,7 @@ if (!message.member.hasPermission("MANAGE_MESSAGES")) {
         name: "!!kick",
         value: "kick someone in your server"
       },
-      {
-          name: "!!addemoji (your emoji ID) ",
-          value: "Add emoji to bot!"
-      },
-	  {
+        {
           name: "!!serverinfo ",
           value: "Server info!!!"
       },
