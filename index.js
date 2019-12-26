@@ -25,7 +25,12 @@ client.on('ready', () => {
   let status = statuses[Math.floor(Math.random() * statuses.length)];
   client.user.setActivity(status, { type: 'WATCHING'});
   }, 15000)
+
+setInterval(function() {
+  client.login(process.env.BOT_TOKEN);
+  }, 600000)
  });
+
 
 client.on("guildCreate", guild => {
   // This event triggers when the bot joins a guild.
