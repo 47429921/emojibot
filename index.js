@@ -26,10 +26,6 @@ client.on('ready', () => {
   client.user.setActivity(status, { type: 'WATCHING'});
   }, 20000)
 
-setInterval(function() {
-client.destroy().then(() => client.login(process.env.BOT_TOKEN));
-  }, 600000)
- });
 
 
 client.on("guildCreate", guild => {
