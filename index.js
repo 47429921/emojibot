@@ -211,7 +211,10 @@ client.on("message", async message => {
     message.channel.send('Invite me by this link https://discordapp.com/oauth2/authorize?client_id=650246586445594625&permissions=8&scope=bot support server:https://discord.gg/AFGqm5f');
 }
 
-
+//if (command === "report"){
+ //const sayMessage = args.join(" ");
+  // message.channel.get('659591875854073856').send(`${message.}`)
+ // }
 
 
     if (command === "serverinfo") {
