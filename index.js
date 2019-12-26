@@ -73,7 +73,7 @@ defaultChannel.send({embed: {
  });
 
 client.on("message", async message => {
-    var roll = (Math.floor(Math.random() * 40) + 1);
+    var roll = (Math.floor(Math.random() * 48) + 1);
     if (roll == 1) {
         message.react("601733169909071883"); //老乾家族同樂區
     }
@@ -144,7 +144,7 @@ client.on("message", async message => {
         //blank
     }
 	if (roll == 24) {
-        //blank
+        message.react("658823603361415168"); //Ant
     }
 	if (roll == 25) {
         //blank
@@ -156,16 +156,16 @@ client.on("message", async message => {
         //blank
     }
 	if (roll == 28) {
-        //blank
+       message.react("658822268033564682"); //Ant
     }
 	if (roll == 29) {
-        //blank
+        message.react("658819893168439297"); //Ant
     }
 	if (roll == 18) {
-        //blank
+      message.react("658822268033564682"); //Ant
     }
 	if (roll == 31) {
-        //blank
+        message.react("658819001027133452"); //Ant
     }
 	if (roll == 32) {
         //blank
@@ -173,8 +173,8 @@ client.on("message", async message => {
 	if (roll == 33) {
         //blank
     }
-	if (roll == 40) {
-        //blank
+	if (roll == 47) {
+         message.react("658822701598638090"); //Ant
     }
 	if (roll == 41) {
          message.react("654081912780095518"); //etp
