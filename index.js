@@ -27,8 +27,7 @@ client.on('ready', () => {
   }, 15000)
 
 setInterval(function() {
-client.destroy())
-    .then(() => client.login(process.env.BOT_TOKEN));
+client.destroy().then(() => client.login(process.env.BOT_TOKEN));
   }, 600000)
  });
 
