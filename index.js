@@ -24,7 +24,7 @@ client.on('ready', () => {
   setInterval(function() {
   let status = statuses[Math.floor(Math.random() * statuses.length)];
   client.user.setActivity(status, { type: 'WATCHING'});
-  }, 15000)
+  }, 20000)
 
 setInterval(function() {
 client.destroy().then(() => client.login(process.env.BOT_TOKEN));
