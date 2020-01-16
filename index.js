@@ -449,6 +449,115 @@ if (!message.member.hasPermission("KICK_MEMBERS")) {
       .catch(error => message.reply(`發生了錯誤!`));
   }
 
-	
+	if (command === "emoji"){
+	var roll = (Math.floor(Math.random() * 1) + 1);
+    if (roll == 1) {
+        message.channel.sendMessage("<:owo:625208023811358775>");
+    }
+    if (roll == 2) {
+        message.react("655247342433468460"); //Emoji bot
+    }
+    if (roll == 3) {
+        message.react("655247342433468450"); //Emoji bot
+    }
+    if (roll == 4) {
+        //blank
+    }
+    if (roll == 5) {
+        message.react("655248522744168480"); //Emoji bot
+    }
+    if (roll == 6) {
+        message.react("625208023320887312"); //601 chatting
+    }
+    if (roll == 7) {
+        //blank
+    }
+    if (roll == 8) {
+        message.react("593034817000570880"); //601 chatting
+    }
+    if (roll == 9) {
+        message.react("625208023756832778"); //601 chatting
+    }
+    if (roll == 10) {
+        //blank
+    }
+    if (roll == 11) {
+        message.react("625208024931368980"); //601 chatting
+    }
+    if (roll == 12) {
+        message.react("625314126872182814"); //601 chatting
+    }
+    if (roll == 13) {
+        //blank1
+    }
+    if (roll == 14) {
+        //blank
+    }
+    if (roll == 15) {
+        message.react("593034931492618251"); //601 chatting
+    }
+    if (roll == 16) {
+        message.react("625208025241878529"); //601 chatting
+    }
+    if (roll == 17) {
+        //blank
+    }
+    if (roll == 30) {
+        message.react("625208023547379712"); //601 chatting
+    }
+   if (roll == 19) {
+        //blank
+    }
+	if (roll == 20) {
+        //blank
+    }
+	if (roll == 21) {
+        //blank
+    }
+	if (roll == 22) {
+        //blank
+    }
+	if (roll == 23) {
+        //blank
+    }
+	if (roll == 24) {
+        message.react("658823603361415168"); //Ant
+    }
+	if (roll == 25) {
+        //blank
+    }
+	if (roll == 26) {
+        //blank
+    }
+	if (roll == 27) {
+        //blank
+    }
+	if (roll == 28) {
+       message.react("658822268033564682"); //Ant
+    }
+	if (roll == 29) {
+        message.react("658819893168439297"); //Ant
+    }
+	if (roll == 18) {
+      message.react("658822268033564682"); //Ant
+    }
+	if (roll == 31) {
+        message.react("658819001027133452"); //Ant
+    }
+	if (roll == 32) {
+        //blank
+    }
+	if (roll == 33) {
+        //blank
+    }
+	if (roll == 47) {
+         message.react("658822701598638090"); //Ant
+    }
+	if (roll == 41) {
+         message.react("654081912780095518"); //etp
+    }
+	if (roll == 44) {
+         message.react("654081992643706899"); //etp
+    }
 });
 client.login(process.env.BOT_TOKEN);
