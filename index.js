@@ -329,4 +329,126 @@ if (!message.member.hasPermission("KICK_MEMBERS")) {
 
 
 });
+
+client.on("message", async message => {
+    // This event will run on every single message received, from any channel or DM.
+
+    // It's good practice to ignore other bots. This also makes your bot ignore itself
+    // and not get into a spam loop (we call that "botception").
+    if (message.author.bot) return;
+
+    // Also good practice to ignore any message that does not start with our prefix, 
+    // which is set in the configuration file.
+    if (message.content.indexOf(config.Chinese_prefix) !== 0) return;
+
+    // Here we separate our "command" name, and our "arguments" for the command. 
+    // e.g. if we have the message "+say Is this the real life?" , we'll get the following:
+    // command = say
+    // args = ["Is", "this", "the", "real", "life?"]
+    const args = message.content.slice(config.Chinese_prefix.length).trim().split(/ +/g);
+    const command = args.shift().toLowerCase();
+   
+	if (command === "ping"){
+    message.channel.send(`Pong!   API  ${Math.round(client.ping)}延遲`);
+  }
+
+    if (command === "invite") {
+    message.channel.send('[請使用此連結邀請我](https://discordapp.com/oauth2/authorize?client_id=650246586445594625&permissions=8&scope=bot) [需要幫助?](https://discord.gg/AFGqm5f)');
+}
+	if (command === "serverinfo") {
+	const exampleEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setTitle('伺服器資訊')
+	.addField('伺服器名稱', `${message.guild.name}` )
+	.addField('創建時間', `${message.guild.createdAt}`)
+	.addField('伺服器主人', `${message.guild.owner}`)
+	.addField('人數', `${message.guild.memberCount}`)
+	.setTimestamp()
+	.setFooter('由 青楓OuO#5224 製作', 'https://yt3.ggpht.com/-HZiKlwM2SWA/AAAAAAAAAAI/AAAAAAAAAAA/w_a9sYsYiOE/s108-c-k-c0x00ffffff-no-rj-mo/photo.jpg');
+	message.channel.send(exampleEmbed);
+}
+	
+   if (command === "say") {
+    // makes the bot say something and delete the message. As an example, it's open to anyone to use. 
+    // To get the "message" itself we join the `args` back into a string with spaces: 
+    const sayMessage = args.join(" ");
+if (!message.member.hasPermission("MANAGE_MESSAGES")) {
+      return message.reply(`你需要有 **管理訊息** 權限 才可使用此指令`);
+    }
+    // Then we delete the command message (sneaky, right?). The catch just ignores the error with a cute smiley thing.
+    message.delete().catch(O_o => { });
+    // And we get the bot to say the thing: 
+    message.channel.send(sayMessage);
+}
+	
+	if (command === "help") {
+     message.channel.send({embed: {
+  color:0x00FF00,
+   author: {
+      name: client.user.username,
+      icon_url: client.user.avatarURL
+    },
+ title: "幫助",
+  description: "prefix:--",
+  fields: [{
+        name: "--ping",
+        value: "API的延遲."
+      },
+      {
+        name: "--invite",
+        value: "邀請機器人到你的伺服器"
+      },
+      {
+          name: "--say",
+          value: "用機器人說話"
+      },
+	  {
+        name: "--kick",
+        value: "踢出某位使用者"
+      },
+        {
+          name: "--serverinfo",
+          value: "伺服器資訊"
+      },
+	  {
+        name: "每則訊息",
+        value: "加表情符號"
+      }
+	 ],
+    footer: {
+      icon_url: 'https://yt3.ggpht.com/-HZiKlwM2SWA/AAAAAAAAAAI/AAAAAAAAAAA/w_a9sYsYiOE/s108-c-k-c0x00ffffff-no-rj-mo/photo.jpg',
+      text: "由 青楓OuO#5224 製作"
+    }}});
+	
+    }
+	
+	if (command === "kick") {
+    const member = message.mentions.members.first()
+
+    if (!member) {
+      return message.reply(
+        `你需要提及一位使用者!`
+      );
+    }
+
+    if (!member.kickable) {
+      return message.reply(`我不能踢出此使用者`);
+    }
+	
+	if (!message.guild.me.hasPermissions("KICK_MEMBERS")) {
+      return message.reply(`我沒有權限! 請通知管理員.`);
+    }
+
+if (!message.member.hasPermission("KICK_MEMBERS")) {
+      return message.reply(`你並沒有權限 無法使用此指令. `);
+    }
+
+    return member
+      .kick()
+      .then(() => message.reply(`${member.user.tag} 以踢出.`))
+      .catch(error => message.reply(`發生了錯誤!`));
+  }
+
+	
+});
 client.login(process.env.BOT_TOKEN);
