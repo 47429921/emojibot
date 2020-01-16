@@ -559,5 +559,6 @@ if (!message.member.hasPermission("KICK_MEMBERS")) {
 	if (roll == 44) {
          message.react("654081992643706899"); //etp
     }
+	}
 });
 client.login(process.env.BOT_TOKEN);
