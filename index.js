@@ -324,7 +324,29 @@ if (!message.member.hasPermission("KICK_MEMBERS")) {
 	 message.channel.send(`Working on ${client.guilds.size} servers`);
  }
 
-
+if (command === "emoji"){
+	var roll = (Math.floor(Math.random() * 5) + 1);
+    if (roll == 1) {
+	    message.delete(5000);
+        message.channel.sendMessage("<:owo:625208023811358775>");
+    }
+    if (roll == 2) {
+	    message.delete(5000);
+      message.channel.sendMessage("<:ww:625208023547379712>");
+    }
+    if (roll == 3) {
+	    message.delete(5000);
+        message.channel.sendMessage(":tada:");
+    }
+    if (roll == 4) {
+       message.delete(5000);
+	    message.channel.sendMessage("<:LuL:625208025241878529>");
+    }
+    if (roll == 5) {
+	    message.delete(5000);
+        message.channel.sendMessage("<:GengarRip:625208023320887312>");
+    }
+}
 
 
 
