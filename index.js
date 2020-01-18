@@ -325,7 +325,7 @@ if (!message.member.hasPermission("KICK_MEMBERS")) {
  }
 
 if (command === "emoji"){
-	var roll = (Math.floor(Math.random() * 5) + 1);
+	var roll = (Math.floor(Math.random() * 7) + 1);
     if (roll == 1) {
 	    message.delete(5000);
         message.channel.sendMessage("<:owo:625208023811358775>");
@@ -345,6 +345,14 @@ if (command === "emoji"){
     if (roll == 5) {
 	    message.delete(5000);
         message.channel.sendMessage("<:GengarRip:625208023320887312>");
+    }
+	if (roll == 6) {
+	    message.delete(5000);
+        message.channel.sendMessage("<:8987_discord:655247342433468450>");
+    }
+	if (roll == 7) {
+	    message.delete(5000);
+        message.channel.sendMessage("<:spots:667957942472933427>");
     }
 }
 
@@ -472,7 +480,7 @@ if (!message.member.hasPermission("KICK_MEMBERS")) {
   }
 
 	if (command === "emoji"){
-	var roll = (Math.floor(Math.random() * 5) + 1);
+	var roll = (Math.floor(Math.random() * 7) + 1);
     if (roll == 1) {
 	    message.delete(5000);
         message.channel.sendMessage("<:owo:625208023811358775>");
@@ -494,10 +502,12 @@ if (!message.member.hasPermission("KICK_MEMBERS")) {
         message.channel.sendMessage("<:GengarRip:625208023320887312>");
     }
     if (roll == 6) {
-        message.react("625208023320887312"); //601 chatting
+	    message.delete(5000);
+        message.channel.sendMessage("<:spots:667957942472933427>");
     }
     if (roll == 7) {
-        //blank
+        message.delete(5000);
+        message.channel.sendMessage("<:8987_discord:655247342433468450>");
     }
     if (roll == 8) {
         message.react("593034817000570880"); //601 chatting
