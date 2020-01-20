@@ -15,7 +15,7 @@ client.on('ready', () => {
       'News: new command !!emoji',
       'Join discord server now!',
       'If you can please donate https://donatebot.io/checkout/642985085418733569',
-      'Thanks for Fauzh#9487 凱恩Kane#5384 for help',
+      'Thanks for Fauzh#9487 Memer#4264 凱恩Kane#5384 for help',
       'Made by 青楓OuO#5224',
       'Vote me now!',
       'ouo?'
