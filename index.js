@@ -12,7 +12,7 @@ client.on('ready', () => {
   let statuses = [
       `Working on ${client.guilds.size} servers`,
       "Enter !!help for help.",
-      'News: new command !!say',
+      'News: new command !!emoji',
       'Join discord server now!',
       'If you can please donate https://donatebot.io/checkout/642985085418733569',
       'Thanks for Fauzh#9487 凱恩Kane#5384 for help',
@@ -74,7 +74,7 @@ defaultChannel.send({embed: {
  });
 
 client.on("message", async message => {
-    var roll = (Math.floor(Math.random() * 48) + 1);
+    var roll = (Math.floor(Math.random() * 50) + 1);
     if (roll == 1) {
         message.react("601733169909071883"); //老乾家族同樂區
     }
@@ -115,7 +115,7 @@ client.on("message", async message => {
         //blank1
     }
     if (roll == 14) {
-        //blank
+        message.react("667957942472933427"); //6Emoji bot
     }
     if (roll == 15) {
         message.react("593034931492618251"); //601 chatting
@@ -209,7 +209,27 @@ client.on("message", async message => {
   }
 
     if (command === "invite") {
-    message.channel.send('Invite me by this link https://discordapp.com/oauth2/authorize?client_id=650246586445594625&permissions=8&scope=bot support server:https://discord.gg/AFGqm5f');
+     message.channel.send({embed: {
+  color:0x00FF00,
+   author: {
+      name: client.user.username,
+      icon_url: client.user.avatarURL
+    },
+ title: "Bot info",
+  description: "Emoji bot",
+  fields: [{
+        name: "Invite to your server!",
+        value: "[Click me!](https://discordapp.com/oauth2/authorize?client_id=650246586445594625&permissions=8&scope=bot)"
+      },
+	  {
+        name: "Need help?",
+        value: "[Click me~](https://discord.gg/AFGqm5f)"
+      }
+	 ],
+    footer: {
+      icon_url: 'https://yt3.ggpht.com/-HZiKlwM2SWA/AAAAAAAAAAI/AAAAAAAAAAA/w_a9sYsYiOE/s108-c-k-c0x00ffffff-no-rj-mo/photo.jpg',
+      text: "由 青楓OuO#5224 製作"
+    }}});
 }
 
 //if (command === "report"){
@@ -383,7 +403,28 @@ client.on("message", async message => {
   }
 
     if (command === "invite") {
-    message.channel.send('[請使用此連結邀請我](https://discordapp.com/oauth2/authorize?client_id=650246586445594625&permissions=8&scope=bot) [需要幫助?](https://discord.gg/AFGqm5f)');
+	    message.channel.send({embed: {
+  color:0x00FF00,
+   author: {
+      name: client.user.username,
+      icon_url: client.user.avatarURL
+    },
+ title: "機器人資訊",
+  description: "一堆訊息",
+  fields: [{
+        name: "邀請我到你的伺服器",
+        value: "[點我!!!](https://discordapp.com/oauth2/authorize?client_id=650246586445594625&permissions=8&scope=bot)"
+      },
+	  {
+        name: "需要幫助?",
+        value: "[點我~](https://discord.gg/AFGqm5f)"
+      }
+	 ],
+    footer: {
+      icon_url: 'https://yt3.ggpht.com/-HZiKlwM2SWA/AAAAAAAAAAI/AAAAAAAAAAA/w_a9sYsYiOE/s108-c-k-c0x00ffffff-no-rj-mo/photo.jpg',
+      text: "由 青楓OuO#5224 製作"
+    }}});
+  
 }
 	if (command === "serverinfo") {
 	const exampleEmbed = new Discord.RichEmbed()
