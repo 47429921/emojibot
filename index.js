@@ -224,6 +224,10 @@ client.on("message", async message => {
 	  {
         name: "Need help?",
         value: "[Click me~](https://discord.gg/AFGqm5f)"
+      },
+	   {
+        name: "Vote for me!",
+        value: "[Click me.](https://top.gg/bot/650246586445594625/vote)"
       }
 	 ],
     footer: {
@@ -418,6 +422,10 @@ client.on("message", async message => {
 	  {
         name: "需要幫助?",
         value: "[點我~](https://discord.gg/AFGqm5f)"
+      },
+	   {
+        name: "投票給我!",
+        value: "[點我.](https://top.gg/bot/650246586445594625/vote)"
       }
 	 ],
     footer: {
