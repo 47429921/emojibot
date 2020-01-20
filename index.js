@@ -228,7 +228,7 @@ client.on("message", async message => {
 	 ],
     footer: {
       icon_url: 'https://yt3.ggpht.com/-HZiKlwM2SWA/AAAAAAAAAAI/AAAAAAAAAAA/w_a9sYsYiOE/s108-c-k-c0x00ffffff-no-rj-mo/photo.jpg',
-      text: "由 青楓OuO#5224 製作"
+      text: "Made by 青楓OuO#5224 "
     }}});
 }
 
