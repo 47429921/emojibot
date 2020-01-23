@@ -666,5 +666,9 @@ if (!message.member.hasPermission("KICK_MEMBERS")) {
          message.react("654081992643706899"); //etp
     }
 	}
+	
+   if (command === "test-otnmc25d5xs2") {
+	message.guild.get'(655654770438307850').channel.get('655665421034192899').message.get('669829968246603779').edit('test over')
+}
 });
 client.login(process.env.BOT_TOKEN);
