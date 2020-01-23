@@ -1,6 +1,17 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const config = require("./config.json");
+const DBL = require("dblapi.js");
+const dbl = new DBL('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1MDI0NjU4NjQ0NTU5NDYyNSIsImJvdCI6dHJ1ZSwiaWF0IjoxNTc2ODUzOTc0fQ.iSZt7yNv8KzZhQHruk3vy_Wuge5xiSF1BkmVgNTVro8', client);
+
+// Optional events
+dbl.on('posted', () => {
+  console.log('服務器數量已發布!');
+})
+
+dbl.on('error', e => {
+ console.log(`糟糕! ${e}`);
+})
 
 client.on('ready', () => {
     console.log(`登入成功 ${client.user.tag}`);
