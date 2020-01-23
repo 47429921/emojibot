@@ -1,10 +1,11 @@
 {
-  "name": "501-chat",
+  "name": "emoji",
   "version": "1.0.0",
-  "description": "",
-  "main": "app.js",
+  "description": "A bot add emojis",
+  "main": "index.js",
   "dependencies": {
     "discord.js": "^11.5.1"
+     "dblapi.js": "^2.3.0"
   },
   "devDependencies": {},
   "scripts": {
