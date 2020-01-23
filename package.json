@@ -4,7 +4,7 @@
   "description": "A bot add emojis",
   "main": "index.js",
   "dependencies": {
-    "discord.js": "^11.5.1"
+    "discord.js": "^11.5.1",
      "dblapi.js": "2.3.0"
   },
   "devDependencies": {},
