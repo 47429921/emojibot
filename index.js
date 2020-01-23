@@ -17,7 +17,7 @@ dbl.webhook.on('ready', hook => {
   console.log(`Webhook running at http://${hook.hostname}:${hook.port}${hook.path}`);
 });
 dbl.webhook.on('vote', vote => {
-  message.auther.get('485286330792673280').send(`User with ID ${vote.user} just voted!`);
+  client.auther.get('485286330792673280').send(`User with ID ${vote.user} just voted!`);
 });
 
 client.on('ready', () => {
