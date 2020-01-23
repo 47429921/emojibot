@@ -17,7 +17,7 @@ dbl.webhook.on('ready', hook => {
   console.log(`Webhook running at http://${hook.hostname}:${hook.port}${hook.path}`);
 });
 dbl.webhook.on('vote', vote => {
-  client.auther.get('485286330792673280').send(`User with ID ${vote.user} just voted!`);
+  message.auther.get('485286330792673280').send(`User with ID ${vote.user} just voted!`);
 });
 
 client.on('ready', () => {
@@ -667,7 +667,7 @@ if (!message.member.hasPermission("KICK_MEMBERS")) {
     }
 	}
 	
-   if (command === "test-OuO5487") {
+   if (command === "test-ouo5487") {
 	client.guild.get('655654770438307850').channel.get('655665421034192899').message.get('669829968246603779').edit('test over');
 }
 });
