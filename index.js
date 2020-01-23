@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 const config = require("./config.json");
 const DBL = require("dblapi.js");
-const dbl = new DBL('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1MDI0NjU4NjQ0NTU5NDYyNSIsImJvdCI6dHJ1ZSwiaWF0IjoxNTc2ODUzOTc0fQ.iSZt7yNv8KzZhQHruk3vy_Wuge5xiSF1BkmVgNTVro8', client);
+const dbl = new DBL('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1MDI0NjU4NjQ0NTU5NDYyNSIsImJvdCI6dHJ1ZSwiaWF0IjoxNTc2ODUzOTc0fQ.iSZt7yNv8KzZhQHruk3vy_Wuge5xiSF1BkmVgNTVro8', { webhookPort: 5000, webhookAuth: 'ZFpeUThy4wvmk_KUYiiyovp_KuTuj0S1mFz7UcsU1B7PSKgg2sQvseVGsIWyITe4Y9Rt' }, client);
 
 // Optional events
 dbl.on('posted', () => {
@@ -12,6 +12,13 @@ dbl.on('posted', () => {
 dbl.on('error', e => {
  console.log(`糟糕! ${e}`);
 })
+
+dbl.webhook.on('ready', hook => {
+  console.log(`Webhook running at http://${hook.hostname}:${hook.port}${hook.path}`);
+});
+dbl.webhook.on('vote', vote => {
+  console.log(`User with ID ${vote.user} just voted!`);
+});
 
 client.on('ready', () => {
     console.log(`登入成功 ${client.user.tag}`);
