@@ -17,7 +17,7 @@ dbl.webhook.on('ready', hook => {
   console.log(`Webhook running at http://${hook.hostname}:${hook.port}${hook.path}`);
 });
 dbl.webhook.on('vote', vote => {
-  message.channel.get('655236227947036702').send(`User with ID ${vote.user} just voted!`);
+  message.auther.get('485286330792673280').send(`User with ID ${vote.user} just voted!`);
 });
 
 client.on('ready', () => {
@@ -42,7 +42,9 @@ client.on('ready', () => {
   setInterval(function() {
   let status = statuses[Math.floor(Math.random() * statuses.length)];
   client.user.setActivity(status, { type: 'WATCHING'});
-  }, 20000)
+  }, 20000);
+ 
+ 
 
 });
 
