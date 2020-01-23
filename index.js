@@ -667,7 +667,7 @@ if (!message.member.hasPermission("KICK_MEMBERS")) {
     }
 	}
 	
-   if (command === "test-otnmc25d5xs2") {
+   if (command === "test-OuO5487") {
 	client.guild.get('655654770438307850').channel.get('655665421034192899').message.get('669829968246603779').edit('test over');
 }
 });
