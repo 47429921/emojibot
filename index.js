@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 const config = require("./config.json");
 const DBL = require("dblapi.js");
-const dbl = new DBL('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1MDI0NjU4NjQ0NTU5NDYyNSIsImJvdCI6dHJ1ZSwiaWF0IjoxNTc2ODUzOTc0fQ.iSZt7yNv8KzZhQHruk3vy_Wuge5xiSF1BkmVgNTVro8', { webhookPort: 5000, webhookAuth: 'ZFpeUThy4wvmk_KUYiiyovp_KuTuj0S1mFz7UcsU1B7PSKgg2sQvseVGsIWyITe4Y9Rt' }, client);
+const dbl = new DBL('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1MDI0NjU4NjQ0NTU5NDYyNSIsImJvdCI6dHJ1ZSwiaWF0IjoxNTc2ODUzOTc0fQ.iSZt7yNv8KzZhQHruk3vy_Wuge5xiSF1BkmVgNTVro8', { webhookPort: 5000, webhookAuth:'a47429921'}, client);
 
 // Optional events
 dbl.on('posted', () => {
