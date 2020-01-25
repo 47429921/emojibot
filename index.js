@@ -721,7 +721,7 @@ client.on('message', message => {
 	    message.delete(5000);
         message.channel.sendMessage("<:12:670593338579222579>");
     }
-
+     }
 });
 
 
