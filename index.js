@@ -94,7 +94,7 @@ defaultChannel.send({embed: {
  });
 
 client.on("message", async message => {
-    var roll = (Math.floor(Math.random() * 50) + 1);
+    var roll = (Math.floor(Math.random() * 70) + 1);
     if (roll == 1) {
         message.react("601733169909071883"); //老乾家族同樂區
     }
@@ -202,6 +202,42 @@ client.on("message", async message => {
     }
 	if (roll == 44) {
          message.react("654081992643706899"); //etp
+    }
+	if (roll == 51) {
+        message.react("670593339174813715"); //oww
+    }
+	if (roll == 52) {
+        message.react("670593339124482068"); //oww
+    }
+	if (roll == 53) {
+        message.react("670593339120287774"); //oww
+    }
+	if (roll == 54) {
+        message.react("670593339115962368"); //oww
+    }
+	if (roll == 55) {
+        message.react("670593339049115658"); //oww
+    }
+	if (roll == 56) {
+        message.react("670593339036270593"); //oww
+    }
+	if (roll == 57) {
+        message.react("670593338981744690"); //oww
+    }
+	if (roll == 58) {
+        message.react("670593338931544071"); //oww
+    }
+	if (roll == 59) {
+        message.react("670593338898120707"); //oww
+    }
+	if (roll == 60) {
+        message.react("670593338746863618"); //oww
+    }
+	if (roll == 61) {
+        message.react("670593338671366206"); //oww
+    }
+	if (roll == 62) {
+        message.react("670593338579222579"); //oww
     }
 }); 
 
