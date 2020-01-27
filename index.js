@@ -95,7 +95,8 @@ defaultChannel.send({embed: {
  });
 
 client.on("message", async message => {
-    var roll = (Math.floor(Math.random() * 100) + 1);
+	
+    var roll = (Math.floor(Math.random() * 50) + 1);
     if (roll == 1) {
         message.react("601733169909071883"); //老乾家族同樂區
     }
@@ -205,7 +206,7 @@ client.on("message", async message => {
          message.react("654081992643706899"); //etp
     }
 	
-	if (roll == 50) {
+	/**if (roll == 50) {
         message.react("670953007541649440"); //Sky Studio
     }
 	if (roll == 51) {
@@ -282,7 +283,7 @@ client.on("message", async message => {
     }
 	if (roll == 90) {
         message.react("670924077799833626"); //Sky Studio
-    }
+    }**/
 }); 
 
 client.on("message", async message => {
@@ -606,7 +607,7 @@ if (!message.member.hasPermission("KICK_MEMBERS")) {
 client.on('message', message => {
      if (message.content === '!!emoji' || message.content === '--emoji') {
 
-	var roll = (Math.floor(Math.random() * 32) + 1);
+	var roll = (Math.floor(Math.random() * 7) + 1);
     if (roll == 1) {
 	    message.delete(5000);
         message.channel.sendMessage("<:owo:625208023811358775>");
@@ -635,7 +636,7 @@ client.on('message', message => {
 	    message.delete(5000);
         message.channel.sendMessage("<:spots:667957942472933427>");
     }
-	     if (roll == 8) {
+	   /**  if (roll == 8) {
   message.delete(5000);
         message.channel.sendMessage("<:zombie~1:670953007541649440>");
     }
@@ -735,7 +736,7 @@ client.on('message', message => {
   message.delete(5000);
         message.channel.sendMessage("<:apple~1:670924077799833626>");
     }
-	
+	**/
      }
 });
 
