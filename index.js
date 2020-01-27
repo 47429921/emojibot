@@ -30,6 +30,7 @@ client.on('ready', () => {
   let statuses = [
       `Working on ${client.guilds.size} servers`,
       "Enter !!help for help.",
+      "輸入 --help 獲得幫助",
       'News: new command !!emoji',
       'Join discord server now!',
       'If you can please donate https://donatebot.io/checkout/642985085418733569',
@@ -605,7 +606,7 @@ if (!message.member.hasPermission("KICK_MEMBERS")) {
 client.on('message', message => {
      if (message.content === '!!emoji' || message.content === '--emoji') {
 
-	var roll = (Math.floor(Math.random() * 7) + 1);
+	var roll = (Math.floor(Math.random() * 32) + 1);
     if (roll == 1) {
 	    message.delete(5000);
         message.channel.sendMessage("<:owo:625208023811358775>");
@@ -633,6 +634,106 @@ client.on('message', message => {
 	if (roll == 7) {
 	    message.delete(5000);
         message.channel.sendMessage("<:spots:667957942472933427>");
+    }
+	     if (roll == 8) {
+  message.delete(5000);
+        message.channel.sendMessage("<:zombie~1:670953007541649440>");
+    }
+	     if (roll == 9) {
+  message.delete(5000);
+        message.channel.sendMessage("<:world_logo_cute:670951706380599308>");
+    }
+	      if (roll == 10) {
+  message.delete(5000);
+        message.channel.sendMessage("<:wolf~1:670951808654376960>");
+    }
+	     if (roll == 11) {
+  message.delete(5000);
+        message.channel.sendMessage("<:villager:670952885856632851>");
+    }
+	     if (roll == 12) {
+  message.delete(5000);
+        message.channel.sendMessage("<:village_hero:670951166229872650>");
+    }
+	     if (roll == 13) {
+  message.delete(5000);
+        message.channel.sendMessage("<:tropical_fish~1:670925273549504524>");
+    }
+	     if (roll == 14) {
+  message.delete(5000);
+        message.channel.sendMessage("<:steve_thinking:671194721539850270>");
+    }
+	     if (roll == 15) {
+  message.delete(5000);
+        message.channel.sendMessage("<:steak:670951044209180692>");
+    }
+	     if (roll == 16) {
+  message.delete(5000);
+        message.channel.sendMessage("<:sky_studio_logo:670887659798921266>");
+    }
+	     if (roll == 17) {
+  message.delete(5000);
+        message.channel.sendMessage("<:sitting_panda:670950858342531082>");
+    }
+	     if (roll == 18) {
+  message.delete(5000);
+        message.channel.sendMessage("<:redstone_torch:670932686969503745>");
+    }
+	     if (roll == 19) {
+  message.delete(5000);
+        message.channel.sendMessage("<:Pork_chop:670951339785846799>");
+    }
+	     if (roll == 20) {
+  message.delete(5000);
+        message.channel.sendMessage("<:minecart_command_block:670927001602752514>");
+    }
+	     if (roll == 21) {
+  message.delete(5000);
+        message.channel.sendMessage("<:lucky_block:670954372674486272>");
+    }
+	     if (roll == 22) {
+  message.delete(5000);
+        message.channel.sendMessage("<:iron_ingot:670950964227735564>");
+    }
+	     if (roll == 23) {
+  message.delete(5000);
+        message.channel.sendMessage("<:honey_bottle:670953738785259540>");
+    }
+	      if (roll == 24) {
+  message.delete(5000);
+        message.channel.sendMessage("<:golden_apple:670923631404122122>");
+    }
+	     if (roll == 25) {
+  message.delete(5000);
+        message.channel.sendMessage("<:glass_bottle:670951239407763476>");
+    }
+	     if (roll == 26) {
+  message.delete(5000);
+        message.channel.sendMessage("<:fox~1:670952082265866240>");
+    }
+	     if (roll == 27) {
+  message.delete(5000);
+        message.channel.sendMessage("<:enchanting_revision_bottle:670934480214818846>");
+    }
+	     if (roll == 28) {
+  message.delete(5000);
+        message.channel.sendMessage("<:easter_spawn_egg:670963673438879764>");
+    }
+	     if (roll == 29) {
+  message.delete(5000);
+        message.channel.sendMessage("<:diamond:670951481238749194>");
+    }
+	      if (roll == 30) {
+  message.delete(5000);
+        message.channel.sendMessage("<:coin:670918509106167849>");
+    }
+	     if (roll == 31) {
+  message.delete(5000);
+        message.channel.sendMessage("<:bedrock:670933546168221707>");
+    }
+	     if (roll == 32) {
+  message.delete(5000);
+        message.channel.sendMessage("<:apple~1:670924077799833626>");
     }
 	
      }
