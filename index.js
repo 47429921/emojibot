@@ -94,7 +94,7 @@ defaultChannel.send({embed: {
  });
 
 client.on("message", async message => {
-    var roll = (Math.floor(Math.random() * 70) + 1);
+    var roll = (Math.floor(Math.random() * 100) + 1);
     if (roll == 1) {
         message.react("601733169909071883"); //老乾家族同樂區
     }
@@ -203,41 +203,84 @@ client.on("message", async message => {
 	if (roll == 44) {
          message.react("654081992643706899"); //etp
     }
+	
+	if (roll == 50) {
+        message.react("670953007541649440"); //Sky Studio
+    }
 	if (roll == 51) {
-        message.react("670593339174813715"); //oww
+        message.react("670951706380599308"); //Sky Studio
     }
 	if (roll == 52) {
-        message.react("670593339124482068"); //oww
-    }
-	if (roll == 53) {
-        message.react("670593339120287774"); //oww
+        message.react("670951808654376960"); //Sky Studio
     }
 	if (roll == 54) {
-        message.react("670593339115962368"); //oww
+        message.react("670952885856632851"); //Sky Studio
     }
 	if (roll == 55) {
-        message.react("670593339049115658"); //oww
-    }
-	if (roll == 56) {
-        message.react("670593339036270593"); //oww
+        message.react("670951166229872650"); //Sky Studio
     }
 	if (roll == 57) {
-        message.react("670593338981744690"); //oww
+        message.react("670925273549504524"); //Sky Studio
     }
 	if (roll == 58) {
-        message.react("670593338931544071"); //oww
-    }
-	if (roll == 59) {
-        message.react("670593338898120707"); //oww
+        message.react("671194721539850270"); //Sky Studio
     }
 	if (roll == 60) {
-        message.react("670593338746863618"); //oww
+        message.react("670951044209180692"); //Sky Studio
     }
 	if (roll == 61) {
-        message.react("670593338671366206"); //oww
+        message.react("670887659798921266"); //Sky Studio
     }
-	if (roll == 62) {
-        message.react("670593338579222579"); //oww
+	if (roll == 63) {
+        message.react("670950858342531082"); //Sky Studio
+    }
+	if (roll == 64) {
+        message.react("670932599790895104"); //Sky Studio
+    }
+	if (roll == 65) {
+        message.react("670951339785846799"); //Sky Studio
+    }
+	if (roll == 69) {
+        message.react("670950781842620416"); //Sky Studio
+    }
+	if (roll == 70) {
+        message.react("670927001602752514"); //Sky Studio
+    }
+	if (roll == 71) {
+        message.react("670954372674486272"); //Sky Studio
+    }
+	if (roll == 72) {
+        message.react("670950964227735564"); //Sky Studio
+    }
+	if (roll == 73) {
+        message.react("670953738785259540"); //Sky Studio
+    }
+	if (roll == 77) {
+        message.react("670923631404122122"); //Sky Studio
+    }
+	if (roll == 78) {
+        message.react("670951239407763476"); //Sky Studio
+    }
+	if (roll == 80) {
+        message.react("670952082265866240"); //Sky Studio
+    }
+	if (roll == 81) {
+        message.react("670934480214818846"); //Sky Studio
+    }
+	if (roll == 83) {
+        message.react("670963673438879764"); //Sky Studio
+    }
+	if (roll == 85) {
+        message.react("670951481238749194"); //Sky Studio
+    }
+	if (roll == 87) {
+        message.react("670918509106167849"); //Sky Studio
+    }
+	if (roll == 89) {
+        message.react("670933546168221707"); //Sky Studio
+    }
+	if (roll == 90) {
+        message.react("670924077799833626"); //Sky Studio
     }
 }); 
 
