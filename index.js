@@ -562,7 +562,7 @@ if (!message.member.hasPermission("KICK_MEMBERS")) {
 client.on('message', message => {
      if (message.content === '!!emoji' || message.content === '--emoji') {
 
-	var roll = (Math.floor(Math.random() * 19) + 1);
+	var roll = (Math.floor(Math.random() * 7) + 1);
     if (roll == 1) {
 	    message.delete(5000);
         message.channel.sendMessage("<:owo:625208023811358775>");
@@ -591,54 +591,7 @@ client.on('message', message => {
 	    message.delete(5000);
         message.channel.sendMessage("<:spots:667957942472933427>");
     }
-	if (roll == 8) {
-	    message.delete(5000);
-        message.channel.sendMessage("<:1_:670593339174813715>");
-    }
-	if (roll == 9) {
-	    message.delete(5000);
-        message.channel.sendMessage("<:2_:670593339124482068>");
-    }
-	if (roll == 10) {
-	    message.delete(5000);
-        message.channel.sendMessage("<:3_:670593339120287774>");
-    }
-	if (roll == 11) {
-	    message.delete(5000);
-        message.channel.sendMessage("<:4_:670593339115962368>");
-    }
-	if (roll == 12) {
-	    message.delete(5000);
-        message.channel.sendMessage("<:5_:670593339049115658>");
-    }
-	if (roll == 13) {
-	    message.delete(5000);
-        message.channel.sendMessage("<:6_:670593339036270593>");
-    }
-	if (roll == 14) {
-	    message.delete(5000);
-        message.channel.sendMessage("<:7_:670593338981744690>");
-    }
-	if (roll == 15) {
-	    message.delete(5000);
-        message.channel.sendMessage("<:8_:670593338931544071>");
-    }
-	if (roll == 16) {
-	    message.delete(5000);
-        message.channel.sendMessage("<:9_:670593338898120707>");
-    }
-	if (roll == 17) {
-	    message.delete(5000);
-        message.channel.sendMessage("<:10:670593338746863618>");
-    }
-	if (roll == 18) {
-	    message.delete(5000);
-        message.channel.sendMessage("<:11:670593338671366206>");
-    }
-	if (roll == 19) {
-	    message.delete(5000);
-        message.channel.sendMessage("<:12:670593338579222579>");
-    }
+	
      }
 });
 
