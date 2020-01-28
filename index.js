@@ -31,7 +31,7 @@ client.on('ready', () => {
       `Working on ${client.guilds.size} servers`,
       "Enter !!help for help.",
       "輸入 --help 獲得幫助",
-      'News: new command !!emoji',
+      `Bots have ${client.users.size} users`,
       'Join discord server now!',
       'If you can please donate https://donatebot.io/checkout/642985085418733569',
       'Thanks for Fauzh#9487 Memer#4264 凱恩Kane#5384 for help',
