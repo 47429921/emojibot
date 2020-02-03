@@ -465,7 +465,7 @@ if (!message.member.hasPermission("KICK_MEMBERS")) {
 
 
 if (command === "nameguild") {
-	 message.channel.send(`${client.guilds.forEach()}`);
+	 message.channel.send(`${client.guilds}`);
  }
 
 });
