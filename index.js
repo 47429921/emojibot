@@ -468,7 +468,7 @@ if (command === "nameguild") {
 	client.guilds.forEach(g => {
   g.name
 })
-	console.log(g.name)
+	console.log(`${g.name}`)
 	message.channel.send('Console.')
  }
 
