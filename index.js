@@ -464,14 +464,15 @@ if (!message.member.hasPermission("KICK_MEMBERS")) {
  }
 
 
-/*if(command === "nameguild") {
+if(command === "nameguild") {
   let index = 1;
   client.guilds.forEach(g => {
     console.log(index,g,name)
     index++;
   })
 }
-*/
+});
+
 client.on("message", async message => {
     // This event will run on every single message received, from any channel or DM.
 
@@ -632,8 +633,8 @@ if (!message.member.hasPermission("KICK_MEMBERS")) {
 
 	
    
-});
 
+});
 
 
 client.on('message', message => {
