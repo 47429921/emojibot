@@ -534,7 +534,7 @@ if (!message.member.hasPermission("MANAGE_MESSAGES")) {
 	const botEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setTitle("Bot's info")
-	.addField("Bot's name", `${bot.user.username}` )
+	.addField("Bot's name", `${client.user.username}` )
 	.addField('Created at', `${message.guild.createdAt}`)
 	.addField('Server owner', `${message.guild.owner}`)
 	.addField('Total members', `${message.guild.memberCount}`)
