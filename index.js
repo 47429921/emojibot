@@ -467,7 +467,7 @@ if (!message.member.hasPermission("KICK_MEMBERS")) {
 if(command === "nameguild") {
   let index = 1;
   client.guilds.forEach(g => {
-    message.channel.send(index,g)
+    message.channel.send(index,g,name)
     index++;
   })
 }
