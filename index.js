@@ -535,9 +535,11 @@ if (!message.member.hasPermission("MANAGE_MESSAGES")) {
 	.setColor('#0099ff')
 	.setTitle("Bot's info")
 	.addField("Bot's name", `${client.user.username}` )
-	.addField('Created at', `${message.guild.createdAt}`)
-	.addField('Server owner', `${message.guild.owner}`)
-	.addField('Total members', `${message.guild.memberCount}`)
+	.addField("Bot's owner", `<@485286330792673280>`)
+	.addField("Bot's uptime", `${client.uptime}`)
+	.addField('Servers size', `${client.guilds.size}`)
+	.addField('Users size', `${client.users.size}`)
+	.addField('Channels size', `${client.channels.size}`)
 	.setTimestamp()
 	.setFooter('Made by 青楓OuO#5224', 'https://yt3.ggpht.com/-HZiKlwM2SWA/AAAAAAAAAAI/AAAAAAAAAAA/w_a9sYsYiOE/s108-c-k-c0x00ffffff-no-rj-mo/photo.jpg');
 	message.channel.send(botEmbed);
