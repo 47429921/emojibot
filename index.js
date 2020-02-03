@@ -530,6 +530,19 @@ if (!message.member.hasPermission("MANAGE_MESSAGES")) {
     message.channel.send(sayMessage);
 }
 	
+	    if (command === "botinfo") {
+	const botEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setTitle("Bot's info")
+	.addField("Bot's name", `${bot.user.username}` )
+	.addField('Created at', `${message.guild.createdAt}`)
+	.addField('Server owner', `${message.guild.owner}`)
+	.addField('Total members', `${message.guild.memberCount}`)
+	.setTimestamp()
+	.setFooter('Made by 青楓OuO#5224', 'https://yt3.ggpht.com/-HZiKlwM2SWA/AAAAAAAAAAI/AAAAAAAAAAA/w_a9sYsYiOE/s108-c-k-c0x00ffffff-no-rj-mo/photo.jpg');
+	message.channel.send(botEmbed);
+}
+	
 	if (command === "help") {
      message.channel.send({embed: {
   color:0x00FF00,
@@ -738,6 +751,9 @@ client.on('message', message => {
     }
 	**/
      }
+	
+	
+
 });
 
 
