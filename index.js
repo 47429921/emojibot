@@ -355,6 +355,20 @@ client.on("message", async message => {
 	.setFooter('Made by 青楓OuO#5224', 'https://yt3.ggpht.com/-HZiKlwM2SWA/AAAAAAAAAAI/AAAAAAAAAAA/w_a9sYsYiOE/s108-c-k-c0x00ffffff-no-rj-mo/photo.jpg');
 	message.channel.send(exampleEmbed);
 }
+	
+	 if (command === "botinfo") {
+	const botEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setTitle("Bot's info")
+	.addField("Bot's name", `${client.user.username}` )
+	.addField("Bot's owner", `<@485286330792673280>`)
+	.addField('Servers size', `${client.guilds.size}`)
+	.addField('Users size', `${client.users.size}`)
+	.addField('Channels size', `${client.channels.size}`)
+	.setTimestamp()
+	.setFooter('Made by 青楓OuO#5224', 'https://yt3.ggpht.com/-HZiKlwM2SWA/AAAAAAAAAAI/AAAAAAAAAAA/w_a9sYsYiOE/s108-c-k-c0x00ffffff-no-rj-mo/photo.jpg');
+	message.channel.send(botEmbed);
+}
 
 
 if (command === "say") {
@@ -533,15 +547,14 @@ if (!message.member.hasPermission("MANAGE_MESSAGES")) {
 	    if (command === "botinfo") {
 	const botEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setTitle("Bot's info")
-	.addField("Bot's name", `${client.user.username}` )
-	.addField("Bot's owner", `<@485286330792673280>`)
-	.addField("Bot's uptime", `${client.uptime}`)
-	.addField('Servers size', `${client.guilds.size}`)
-	.addField('Users size', `${client.users.size}`)
-	.addField('Channels size', `${client.channels.size}`)
+	.setTitle("機器人資訊")
+	.addField("機器人名稱", `${client.user.username}` )
+	.addField("機器人擁有者", `<@485286330792673280>`)
+	.addField('伺服器數量', `${client.guilds.size}`)
+	.addField('使用者數量', `${client.users.size}`)
+	.addField('頻道數量', `${client.channels.size}`)
 	.setTimestamp()
-	.setFooter('Made by 青楓OuO#5224', 'https://yt3.ggpht.com/-HZiKlwM2SWA/AAAAAAAAAAI/AAAAAAAAAAA/w_a9sYsYiOE/s108-c-k-c0x00ffffff-no-rj-mo/photo.jpg');
+	.setFooter('由 青楓OuO#5224 製作', 'https://yt3.ggpht.com/-HZiKlwM2SWA/AAAAAAAAAAI/AAAAAAAAAAA/w_a9sYsYiOE/s108-c-k-c0x00ffffff-no-rj-mo/photo.jpg');
 	message.channel.send(botEmbed);
 }
 	
