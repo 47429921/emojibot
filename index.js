@@ -409,6 +409,10 @@ if (!message.member.hasPermission("MANAGE_MESSAGES")) {
         name: "!!kick",
         value: "kick someone in your server"
       },
+{
+        name: "!!botinfo",
+        value: "Bot's information."
+      },
         {
           name: "!!serverinfo ",
           value: "Server info!!!"
@@ -587,6 +591,10 @@ if (!message.member.hasPermission("MANAGE_MESSAGES")) {
 	  {
         name: "--kick",
         value: "踢出某位使用者"
+      },
+{
+        name: "--botinfo",
+        value: "機器人資訊"
       },
         {
           name: "--serverinfo",
