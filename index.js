@@ -375,7 +375,14 @@ if (!message.member.hasPermission("MANAGE_MESSAGES")) {
     // Then we delete the command message (sneaky, right?). The catch just ignores the error with a cute smiley thing.
     message.delete().catch(O_o => { });
     // And we get the bot to say the thing: 
-    message.channel.send(sayMessage);
+	const sayEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setTitle('Message.')
+	.addField('Message:', `${message.author.username}` )
+	.setTimestamp()
+	.setFooter('Made by 青楓OuO#5224', 'https://yt3.ggpht.com/-HZiKlwM2SWA/AAAAAAAAAAI/AAAAAAAAAAA/w_a9sYsYiOE/s108-c-k-c0x00ffffff-no-rj-mo/photo.jpg');
+
+    message.channel.send(sayEmbed);
 }
 
     if (command === "help") {
