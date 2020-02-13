@@ -378,9 +378,9 @@ if (!message.member.hasPermission("MANAGE_MESSAGES")) {
 	const sayEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setTitle('Message.')
-	.addField('Message:', `${message.author.username}` )
+	.addField('Message:', `${sayMessage}` )
 	.setTimestamp()
-	.setFooter('Made by 青楓OuO#5224', 'https://yt3.ggpht.com/-HZiKlwM2SWA/AAAAAAAAAAI/AAAAAAAAAAA/w_a9sYsYiOE/s108-c-k-c0x00ffffff-no-rj-mo/photo.jpg');
+	.setFooter(`Message send by:${message.author.username}`, `${message.user.avatarURL}`
 
     message.channel.send(sayEmbed);
 }
