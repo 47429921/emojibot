@@ -378,7 +378,7 @@ if (!message.member.hasPermission("MANAGE_MESSAGES")) {
 	const sayEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setTitle('Message.')
-	.addField(`${sayMessage}` , "" )
+	.addField(` ` , `${sayMessage}` )
 	.setTimestamp()
 	.setFooter(`Message send by:${message.author.username}`, `${message.author.avatarURL}` )
 
@@ -597,7 +597,7 @@ if (!message.member.hasPermission("MANAGE_MESSAGES")) {
     const sayEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setTitle('訊息')
-	.addField( `${sayMessage}` , "" )
+	.addField( ` ` , `${sayMessage}` )
 	.setTimestamp()
 	.setFooter(`由:${message.author.username}送出`, `${message.author.avatarURL}` )
 
