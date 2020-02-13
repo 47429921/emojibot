@@ -378,7 +378,7 @@ if (!message.member.hasPermission("MANAGE_MESSAGES")) {
 	const sayEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setTitle('Message.')
-	.addField('Message:', `${sayMessage}` )
+	.addField(`${sayMessage}` )
 	.setTimestamp()
 	.setFooter(`Message send by:${message.author.username}`, `${message.author.avatarURL}` )
 
@@ -594,7 +594,14 @@ if (!message.member.hasPermission("MANAGE_MESSAGES")) {
     // Then we delete the command message (sneaky, right?). The catch just ignores the error with a cute smiley thing.
     message.delete().catch(O_o => { });
     // And we get the bot to say the thing: 
-    message.channel.send(sayMessage);
+    const sayEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setTitle('訊息')
+	.addField( `${sayMessage}` )
+	.setTimestamp()
+	.setFooter(`由:${message.author.username}送出`, `${message.author.avatarURL}` )
+
+    message.channel.send(sayEmbed);
 }
 	
 	    if (command === "botinfo") {
