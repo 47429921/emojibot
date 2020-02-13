@@ -380,7 +380,7 @@ if (!message.member.hasPermission("MANAGE_MESSAGES")) {
 	.setTitle('Message.')
 	.addField('Message:', `${sayMessage}` )
 	.setTimestamp()
-	.setFooter(`Message send by:${message.author.username}`, `${message.user.avatarURL}` )
+	.setFooter(`Message send by:${message.author.username}`, `${message.author.avatarURL}` )
 
     message.channel.send(sayEmbed);
 }
