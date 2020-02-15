@@ -372,6 +372,9 @@ if (command === "say") {
 if (!message.member.hasPermission("MANAGE_MESSAGES")) {
       return message.reply(`You don't have permission. If you think this is wrong please report bug at suppot server. `);
     }
+	if (message.server.id("632237589771976714")) {
+      return message.channel.send(`${sayMessage}`);
+    }
     // Then we delete the command message (sneaky, right?). The catch just ignores the error with a cute smiley thing.
     message.delete().catch(O_o => { });
     // And we get the bot to say the thing: 
