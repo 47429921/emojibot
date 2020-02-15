@@ -372,7 +372,7 @@ if (command === "say") {
 if (!message.member.hasPermission("MANAGE_MESSAGES")) {
       return message.reply(`You don't have permission. If you think this is wrong please report bug at suppot server. `);
     }
-	if (message.guildid("642985085418733569")) {
+	if (message.guild.id("642985085418733569")) {
       return message.channel.send(`${sayMessage}`);
     }
     // Then we delete the command message (sneaky, right?). The catch just ignores the error with a cute smiley thing.
