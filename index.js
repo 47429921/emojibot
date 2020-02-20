@@ -908,7 +908,7 @@ client.on('message', message => {
 	.setTimestamp()
 	.setFooter('由 青楓OuO#5224 製作/Made by 青楓OuO#5224', 'https://yt3.ggpht.com/-HZiKlwM2SWA/AAAAAAAAAAI/AAAAAAAAAAA/w_a9sYsYiOE/s108-c-k-c0x00ffffff-no-rj-mo/photo.jpg');
 	message.channel.send(voteEmbed);
-	    message.author.get('485286330792673280').send('Someone maybe vote :)');
+	   
         }
 
 	
