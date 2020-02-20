@@ -18,8 +18,9 @@ dbl.on('error', e => {
 dbl.webhook.on('ready', hook => {
   console.log(`Webhook running at http://${hook.hostname}:${hook.port}${hook.path}`);
 });
+
 dbl.webhook.on('vote', vote => {
-  client.channels.get('655236227947036702').send(`User with ID ${vote.user} just voted!`);
+  message.channel.get('655236227947036702').send(`感謝 ${vote.user}的投票!`);
 });
 
 client.on('ready', () => {
