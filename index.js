@@ -763,8 +763,9 @@ if (!message.member.hasPermission("BAN_MEMBERS")) {
 
 client.on('message', message => {
      if (message.content === '!!emoji' || message.content === '--emoji') {
-
-	var roll = (Math.floor(Math.random() * 7) + 1);
+	     dbl.hasVoted(`${message.author.id}`).then(voted => {
+    if (voted) {
+	    var roll = (Math.floor(Math.random() * 7) + 1);
     if (roll == 1) {
 	    message.delete(5000);
         message.channel.sendMessage("<:owo:625208023811358775>");
@@ -894,6 +895,21 @@ client.on('message', message => {
         message.channel.sendMessage("<:apple~1:670924077799833626>");
     }
 	**/
+    }
+    else{
+        const voteEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setTitle('Emoji')
+	.addField('Sorry', `You need to vote to use this command.` )
+	.addField('Vote link', `[Click me](https://top.gg/bot/650246586445594625/vote)`)
+	.addField('抱歉', `你需要前往投票才可以使用此指令`)
+	.addField('投票連結', `[點我](https://top.gg/bot/650246586445594625/vote)`)
+	.setTimestamp()
+	.setFooter('由 青楓OuO#5224 製作/Made by 青楓OuO#5224', 'https://yt3.ggpht.com/-HZiKlwM2SWA/AAAAAAAAAAI/AAAAAAAAAAA/w_a9sYsYiOE/s108-c-k-c0x00ffffff-no-rj-mo/photo.jpg');
+	message.channel.send(exampleEmbed);
+        }
+
+	
      }
 	
 	
