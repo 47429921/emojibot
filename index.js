@@ -4,7 +4,7 @@ const config = require("./config.json");
 const fs = require("fs");
 const coins = require("./coins.json");
 const DBL = require("dblapi.js");
-const dbl = new DBL(process.env.DBL_TOKEN, { webhookPort: 5000, webhookAuth:'669826524601516032'}, client);
+const dbl = new DBL(process.env.DBL_TOKEN, { webhookPort: 5000, webhookAuth:'ZFpeUThy4wvmk_KUYiiyovp_KuTuj0S1mFz7UcsU1B7PSKgg2sQvseVGsIWyITe4Y9Rt'}, client);
 
 // Optional events
 dbl.on('posted', () => {
