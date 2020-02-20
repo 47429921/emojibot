@@ -906,7 +906,7 @@ client.on('message', message => {
 	.addField('投票連結', `[點我](https://top.gg/bot/650246586445594625/vote)`)
 	.setTimestamp()
 	.setFooter('由 青楓OuO#5224 製作/Made by 青楓OuO#5224', 'https://yt3.ggpht.com/-HZiKlwM2SWA/AAAAAAAAAAI/AAAAAAAAAAA/w_a9sYsYiOE/s108-c-k-c0x00ffffff-no-rj-mo/photo.jpg');
-	message.channel.send(exampleEmbed);
+	message.channel.send(voteEmbed);
         }
 
 	
