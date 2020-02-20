@@ -910,7 +910,7 @@ client.on('message', message => {
         }
 
 	
-     }
+     })
 	
 	
 
