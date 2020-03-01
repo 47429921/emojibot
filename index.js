@@ -795,6 +795,18 @@ client.on('message', message => {
 	    message.delete(5000);
         message.channel.sendMessage("<:spots:667957942472933427>");
     }
+	    if (roll == 8) {
+	    message.delete(5000);
+        message.channel.sendMessage(":+1:");
+    }
+	    if (roll == 9) {
+	    message.delete(5000);
+        message.channel.sendMessage(":smile:");
+    }
+	    if (roll == 10) {
+	    message.delete(5000);
+        message.channel.sendMessage(":dollar:");
+    }
 	   /**  if (roll == 8) {
   message.delete(5000);
         message.channel.sendMessage("<:zombie~1:670953007541649440>");
