@@ -766,7 +766,7 @@ client.on('message', message => {
      if (message.content === '!!emoji' || message.content === '--emoji') {
 	     dbl.hasVoted(`${message.author.id}`).then(voted => {
     if (voted) {
-	    var roll = (Math.floor(Math.random() * 7) + 1);
+	    var roll = (Math.floor(Math.random() * 10) + 1);
     if (roll == 1) {
 	    message.delete(5000);
         message.channel.sendMessage("<:owo:625208023811358775>");
