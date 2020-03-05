@@ -622,8 +622,8 @@ if (!message.member.hasPermission("MANAGE_MESSAGES")) {
 	.setFooter('由 青楓OuO#5224 製作', 'https://yt3.ggpht.com/-HZiKlwM2SWA/AAAAAAAAAAI/AAAAAAAAAAA/w_a9sYsYiOE/s108-c-k-c0x00ffffff-no-rj-mo/photo.jpg');
 	message.channel.send(botEmbed);
 }
-	
-	/*if(!coins[message.author.is]){
+	if (command === "botinfo") {
+	if(!coins[message.author.is]){
       coins[message.author.id] = {
 	      coins: 0
       };
@@ -643,7 +643,8 @@ if (!message.member.hasPermission("MANAGE_MESSAGES")) {
 		.setColor("#0000FF")
 		.addField(`${coinAmt} coins add`)
 		message.channel.send(coinEmbed);
-	}*/
+	}
+	}
 	
 	      
 	if (command === "help") {
