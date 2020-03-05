@@ -622,7 +622,7 @@ if (!message.member.hasPermission("MANAGE_MESSAGES")) {
 	.setFooter('由 青楓OuO#5224 製作', 'https://yt3.ggpht.com/-HZiKlwM2SWA/AAAAAAAAAAI/AAAAAAAAAAA/w_a9sYsYiOE/s108-c-k-c0x00ffffff-no-rj-mo/photo.jpg');
 	message.channel.send(botEmbed);
 }
-	if (command === "botinfo") {
+	if (command === "test-coin") {
 	if(!coins[message.author.is]){
       coins[message.author.id] = {
 	      coins: 0
