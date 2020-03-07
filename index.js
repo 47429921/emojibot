@@ -772,47 +772,47 @@ client.on('message', message => {
 	    var roll = (Math.floor(Math.random() * 11) + 1);
     if (roll == 1) {
 	    message.delete(5000);
-        message.channel.sendMessage("<:owo:625208023811358775>");
+        message.channel.send("<:owo:625208023811358775>");
     }
     if (roll == 2) {
 	    message.delete(5000);
-      message.channel.sendMessage("<:ww:625208023547379712>");
+      message.channel.send("<:ww:625208023547379712>");
     }
     if (roll == 3) {
 	    message.delete(5000);
-        message.channel.sendMessage(":tada:");
+        message.channel.send(":tada:");
     }
     if (roll == 4) {
        message.delete(5000);
-	    message.channel.sendMessage("<:LuL:625208025241878529>");
+	    message.channel.send("<:LuL:625208025241878529>");
     }
     if (roll == 5) {
 	    message.delete(5000);
-        message.channel.sendMessage("<:GengarRip:625208023320887312>");
+        message.channel.send("<:GengarRip:625208023320887312>");
     }
 	if (roll == 6) {
 	    message.delete(5000);
-        message.channel.sendMessage("<:8987_discord:655247342433468450>");
+        message.channel.send("<:8987_discord:655247342433468450>");
     }
 	if (roll == 7) {
 	    message.delete(5000);
-        message.channel.sendMessage("<:spots:667957942472933427>");
+        message.channel.send("<:spots:667957942472933427>");
     }
 	    if (roll == 8) {
 	    message.delete(5000);
-        message.channel.sendMessage(":+1:");
+        message.channel.send(":+1:");
     }
 	    if (roll == 9) {
 	    message.delete(5000);
-        message.channel.sendMessage(":smile:");
+        message.channel.send(":smile:");
     }
 	    if (roll == 10) {
 	    message.delete(5000);
-        message.channel.sendMessage(":dollar:");
+        message.channel.send(":dollar:");
     }
 	     if (roll == 11) {
   message.delete(5000);
-        message.channel.sendMessage("<:on888:685678907319779380>");
+        message.channel.send("<:on888:685678907319779380>");
     }
 	    /**
 	     if (roll == 9) {
