@@ -769,7 +769,7 @@ client.on('message', message => {
      if (message.content === '!!emoji' || message.content === '--emoji') {
 	     dbl.hasVoted(`${message.author.id}`).then(voted => {
     if (voted) {
-	    var roll = (Math.floor(Math.random() * 11) + 1);
+	    var roll = (Math.floor(Math.random() * 10) + 1);
     if (roll == 1) {
 	    message.delete(5000);
         message.channel.send("<:owo:625208023811358775>");
@@ -810,10 +810,7 @@ client.on('message', message => {
 	    message.delete(5000);
         message.channel.send(":dollar:");
     }
-	     if (roll == 11) {
-  message.delete(5000);
-        message.channel.send("<:on888:685678907319779380>");
-    }
+	     
 	    /**
 	     if (roll == 9) {
   message.delete(5000);
