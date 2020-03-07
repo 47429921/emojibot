@@ -812,7 +812,7 @@ client.on('message', message => {
     }
 	     if (roll == 11) {
   message.delete(5000);
-        message.channel.sendMessage("<:on899:685678907319779380>");
+        message.channel.sendMessage("<:on888:685678907319779380>");
     }
 	    /**
 	     if (roll == 9) {
