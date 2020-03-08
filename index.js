@@ -519,7 +519,7 @@ if (!message.member.hasPermission("KICK_MEMBERS")) {
  }
 
 	if(command === "eset") {
-		if(args.slice(1) = 'w'){
+		if(args.slice(1) == 'w'){
 			message.channel.send('test-over')
 		}
 	}
