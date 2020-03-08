@@ -518,15 +518,18 @@ if (!message.member.hasPermission("KICK_MEMBERS")) {
 
  }
 
-	if(command === "eset") {
-		if(args.slice(1) ==+ 'w'){
-			message.channel.send('test-over')
-		}
-		message.channel.send('test-fail')
+	if(command === "eset auto-reaction off") {
+		client.role.setPermissions(0)
+		client.role.setPermissions(['KICK_MEMBERS', 'BAN_MEMBERS', 'Manage Roles', 'Manage Emojis', 'Send Messages', 'Embed Links', 'Attach Files', 'Use External Emojis'])
+		message.channel.send('Auto reaction had been turn off! Make sure if you gave every bot in a same role,and you gave the role Administrator please turn it off.')
+		
 	}
+	if(command === "eset auto-reaction on") {
+		client.role.setPermissions(['Administrator'])
+		message.channel.send('Auto reaction had been turn on!')
 		
         
-
+	}
 if(command === "nameguild") {
   let index = 1;
   client.guilds.forEach(g => {
