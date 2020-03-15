@@ -55,7 +55,6 @@ client.on('ready', () => {
 
 client.on("guildCreate", guild => {
   // This event triggers when the bot joins a guild.
-  console.log(`已加入 ${guild.name} ID為 (id: ${guild.id}). 此伺服器有 ${guild.memberCount} 人!`);
   let defaultChannel = "";
 guild.channels.forEach((channel) => {
   if(channel.type == "text" && defaultChannel == "") {
@@ -93,10 +92,7 @@ defaultChannel.send({embed: {
 }}});
 	
  });
- client.on("guildDelete", guild => {
-  // this event triggers when the bot is removed from a guild.
-  console.log(`我已經離開了 ${guild.name} id: (id: ${guild.id}) 此群還有 ${guild.memberCount} 人`);
- });
+
 
 client.on("message", async message => {
 	
