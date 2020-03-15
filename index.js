@@ -2,9 +2,10 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 const config = require("./config.json");
 const fs = require("fs");
-const coins = require("./coins.json");
+const mongoose = require("mongoose");
 const DBL = require("dblapi.js");
 const dbl = new DBL(process.env.DBL_TOKEN, { webhookPort: 5000, webhookAuth:'ZFpeUThy4wvmk_KUYiiyovp_KuTuj0S1mFz7UcsU1B7PSKgg2sQvseVGsIWyITe4Y9Rt'}, client);
+mongoose.connect('mongo "mongodb+srv://emojibot-hurgt.gcp.mongodb.net/test"  --username emoji --password a47429921', {useNewUrlParser: true});
 
 // Optional events
 dbl.on('posted', () => {
@@ -514,18 +515,7 @@ if (!message.member.hasPermission("KICK_MEMBERS")) {
 
  }
 
-	if(command === "eset auto-reaction off") {
-		client.role.setPermissions(0)
-		client.role.setPermissions(['KICK_MEMBERS', 'BAN_MEMBERS', 'Manage Roles', 'Manage Emojis', 'Send Messages', 'Embed Links', 'Attach Files', 'Use External Emojis'])
-		message.channel.send('Auto reaction had been turn off! Make sure if you gave every bot in a same role,and you gave the role Administrator please turn it off.')
-		
-	}
-	if(command === "eset auto-reaction on") {
-		client.role.setPermissions(['Administrator'])
-		message.channel.send('Auto reaction had been turn on!')
-		
-        
-	}
+	
 if(command === "nameguild") {
   let index = 1;
   client.guilds.forEach(g => {
