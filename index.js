@@ -631,29 +631,7 @@ if (!message.member.hasPermission("MANAGE_MESSAGES")) {
 	.setFooter('由 青楓OuO#5224 製作', 'https://yt3.ggpht.com/-HZiKlwM2SWA/AAAAAAAAAAI/AAAAAAAAAAA/w_a9sYsYiOE/s108-c-k-c0x00ffffff-no-rj-mo/photo.jpg');
 	message.channel.send(botEmbed);
 }
-	if (command === "test-coin") {
-	if(!coins[message.author.is]){
-      coins[message.author.id] = {
-	      coins: 0
-      };
-	}
-	let coinAmt = Math.floor(Math.random() * 15) + 1;
-	let baseAmt = Math.floor(Math.random() * 15) + 1;
 	
-	if (coinAmt === baseAmt){
-		coins[message.author.id] = {
-		coins: coins[message.author.id].coins + coinAmt
-	};
-		fs.writeFile("./coins.json", JSON.stringify(coins), (err) => {
-			if (err) console.log(err)
-		});
-		let coinEmbed = new Discord.RichEmbed()
-		.setAuthor(message.author.username)
-		.setColor("#0000FF")
-		.addField(`${coinAmt} coins add`)
-		message.channel.send(coinEmbed);
-	}
-	}
 	
 	      
 	if (command === "help") {
