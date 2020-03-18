@@ -9,7 +9,7 @@ mongoose.connect('mongo "mongodb+srv://emojibot-hurgt.gcp.mongodb.net/test"  --u
 
 // Optional events
 dbl.on('posted', () => {
-  console.log('服務器數量已發布!');
+  console.log('服務器數量已發布.');
 })
 
 dbl.on('error', e => {
