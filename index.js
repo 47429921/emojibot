@@ -5,7 +5,6 @@ const fs = require("fs");
 const mongoose = require("mongoose");
 const DBL = require("dblapi.js");
 const dbl = new DBL(process.env.DBL_TOKEN, { webhookPort: 5000, webhookAuth:'ZFpeUThy4wvmk_KUYiiyovp_KuTuj0S1mFz7UcsU1B7PSKgg2sQvseVGsIWyITe4Y9Rt'}, client);
-mongoose.connect('mongo "mongodb+srv://emojibot-hurgt.gcp.mongodb.net/test"  --username emoji --password a47429921', {useNewUrlParser: true});
 
 // Optional events
 dbl.on('posted', () => {
