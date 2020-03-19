@@ -202,79 +202,7 @@ client.on("message", async message => {
 	if (roll == 51) {
         message.react("685678907319779380"); //emoji
     }
-	/**
-	if (roll == 52) {
-        message.react("670951808654376960"); //Sky Studio
-    }
-	if (roll == 54) {
-        message.react("670952885856632851"); //Sky Studio
-    }
-	if (roll == 55) {
-        message.react("670951166229872650"); //Sky Studio
-    }
-	if (roll == 57) {
-        message.react("670925273549504524"); //Sky Studio
-    }
-	if (roll == 58) {
-        message.react("671194721539850270"); //Sky Studio
-    }
-	if (roll == 60) {
-        message.react("670951044209180692"); //Sky Studio
-    }
-	if (roll == 61) {
-        message.react("670887659798921266"); //Sky Studio
-    }
-	if (roll == 63) {
-        message.react("670950858342531082"); //Sky Studio
-    }
-	if (roll == 64) {
-        message.react("670932599790895104"); //Sky Studio
-    }
-	if (roll == 65) {
-        message.react("670951339785846799"); //Sky Studio
-    }
-	if (roll == 69) {
-        message.react("670950781842620416"); //Sky Studio
-    }
-	if (roll == 70) {
-        message.react("670927001602752514"); //Sky Studio
-    }
-	if (roll == 71) {
-        message.react("670954372674486272"); //Sky Studio
-    }
-	if (roll == 72) {
-        message.react("670950964227735564"); //Sky Studio
-    }
-	if (roll == 73) {
-        message.react("670953738785259540"); //Sky Studio
-    }
-	if (roll == 77) {
-        message.react("670923631404122122"); //Sky Studio
-    }
-	if (roll == 78) {
-        message.react("670951239407763476"); //Sky Studio
-    }
-	if (roll == 80) {
-        message.react("670952082265866240"); //Sky Studio
-    }
-	if (roll == 81) {
-        message.react("670934480214818846"); //Sky Studio
-    }
-	if (roll == 83) {
-        message.react("670963673438879764"); //Sky Studio
-    }
-	if (roll == 85) {
-        message.react("670951481238749194"); //Sky Studio
-    }
-	if (roll == 87) {
-        message.react("670918509106167849"); //Sky Studio
-    }
-	if (roll == 89) {
-        message.react("670933546168221707"); //Sky Studio
-    }
-	if (roll == 90) {
-        message.react("670924077799833626"); //Sky Studio
-    }**/
+
 }); 
 
 client.on("message", async message => {
@@ -513,13 +441,7 @@ if (!message.member.hasPermission("KICK_MEMBERS")) {
  }
 
 	
-if(command === "nameguild") {
-  let index = 1;
-  client.guilds.forEach(g => {
-    console.log(index,g.name)
-    index++;
-  })
-}
+
 });
 
 client.on("message", async message => {
