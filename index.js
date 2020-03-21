@@ -10,7 +10,7 @@ dbl.on('posted', () => {
 })
 
 dbl.on('error', e => {
- console.log(`糟糕! ${e}`);
+ console.log(`糟糕 發生錯誤! ${e}`);
 })
 
 dbl.webhook.on('ready', hook => {
