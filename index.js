@@ -52,7 +52,7 @@ client.on('ready', () => {
  
 
 });
-setInterval(function() {
+/*setInterval(function() {
   POST https://bots.ondiscord.xyz/bot-api/bots/650246586445594625/guilds HTTP/1.1
 Authorization: ba42e55844878df3ab90b742a7e19d04
 Content-Type: application/json
@@ -65,7 +65,7 @@ Content-Type: application/json
  
 
 });
-
+*/
 client.on("guildCreate", guild => {
   // This event triggers when the bot joins a guild.
   let defaultChannel = "";
