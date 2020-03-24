@@ -21,8 +21,8 @@ dbl.webhook.on('vote', vote => {
   message.channel.get('655236227947036702').send(`感謝 ${vote.user}的投票!`);
 });
 
-POST https://bots.ondiscord.xyz/bot-api/bots/ba42e55844878df3ab90b742a7e19d04/guilds HTTP/1.1
-Authorization: b1c678e8b0a346efe45e97c12b28f074
+POST https://bots.ondiscord.xyz/bot-api/bots/650246586445594625/guilds HTTP/1.1
+Authorization: ba42e55844878df3ab90b742a7e19d04
 Content-Type: application/json
 
 {
@@ -54,6 +54,19 @@ client.on('ready', () => {
   let status = statuses[Math.floor(Math.random() * statuses.length)];
   client.user.setActivity(status, { type: 'WATCHING'});
   }, 20000);
+ 
+ 
+
+});
+setInterval(function() {
+  POST https://bots.ondiscord.xyz/bot-api/bots/650246586445594625/guilds HTTP/1.1
+Authorization: ba42e55844878df3ab90b742a7e19d04
+Content-Type: application/json
+
+{
+	"guildCount": 463
+}
+  }, 120000);
  
  
 
