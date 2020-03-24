@@ -21,6 +21,14 @@ dbl.webhook.on('vote', vote => {
   message.channel.get('655236227947036702').send(`感謝 ${vote.user}的投票!`);
 });
 
+POST https://bots.ondiscord.xyz/bot-api/bots/ba42e55844878df3ab90b742a7e19d04/guilds HTTP/1.1
+Authorization: b1c678e8b0a346efe45e97c12b28f074
+Content-Type: application/json
+
+{
+	"guildCount": 463
+}
+
 client.on('ready', () => {
     console.log(`登入成功 ${client.user.tag}`);
     require('events').EventEmitter.defaultMaxListeners = 15;
