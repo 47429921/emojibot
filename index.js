@@ -1,6 +1,13 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const config = require("./config.json");
+var mongoose = require('mongoose');
+mongoose.connect('mongodb://localhost/emojibot', {useNewUrlParser: true});
+var db = mongoose.connection;
+db.on('error', console.error.bind(console, 'connection error:'));
+db.once('open', function() {
+  // we're connected!
+});
 const DBL = require("dblapi.js");
 const dbl = new DBL(process.env.DBL_TOKEN, { webhookPort: 5000, webhookAuth:'ZFpeUThy4wvmk_KUYiiyovp_KuTuj0S1mFz7UcsU1B7PSKgg2sQvseVGsIWyITe4Y9Rt'}, client);
 
