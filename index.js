@@ -138,7 +138,8 @@ client.on("message", async message => {
         message.react("625208023756832778"); //601 chatting
     }
     if (roll == 10) {
-        //blank
+        
+	    message.react("693348921107283990");
     }
     if (roll == 11) {
         message.react("625208024931368980"); //601 chatting
@@ -159,13 +160,14 @@ client.on("message", async message => {
         message.react("625208025241878529"); //601 chatting
     }
     if (roll == 17) {
-        //blank
+        message.react("693348921690292344");
+	    
     }
     if (roll == 30) {
         message.react("625208023547379712"); //601 chatting
     }
    if (roll == 19) {
-        //blank
+        message.react("693348921271124009");
     }
 	if (roll == 20) {
         //blank
@@ -678,7 +680,7 @@ client.on('message', message => {
      if (message.content === '!!emoji' || message.content === '--emoji') {
 	     dbl.hasVoted(`${message.author.id}`).then(voted => {
     if (voted) {
-	    var roll = (Math.floor(Math.random() * 10) + 1);
+	    var roll = (Math.floor(Math.random() * 13) + 1);
     if (roll == 1) {
 	    message.delete(5000);
         message.channel.send("<:owo:625208023811358775>");
@@ -720,20 +722,22 @@ client.on('message', message => {
         message.channel.send(":dollar:");
     }
 	     
-	    /**
-	     if (roll == 9) {
-  message.delete(5000);
-        message.channel.sendMessage("<:world_logo_cute:670951706380599308>");
-    }
-	      if (roll == 10) {
-  message.delete(5000);
-        message.channel.sendMessage("<:wolf~1:670951808654376960>");
-    }
+	    
 	     if (roll == 11) {
   message.delete(5000);
-        message.channel.sendMessage("<:villager:670952885856632851>");
+        message.channel.sendMessage("<:owo:693348921271124009>");
     }
-	     if (roll == 12) {
+	   
+	      if (roll == 12) {
+  message.delete(5000);
+        message.channel.sendMessage("<:Dog1:693348921690292344>");
+    }
+	    
+	     if (roll == 13) {
+  message.delete(5000);
+        message.channel.sendMessage("<:595031741962649610:693348921107283990>");
+    }
+	/**     if (roll == 12) {
   message.delete(5000);
         message.channel.sendMessage("<:village_hero:670951166229872650>");
     }
