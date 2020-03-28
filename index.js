@@ -727,7 +727,7 @@ client.on('message', message => {
   message.delete(5000);
         message.channel.sendMessage("<:owo:693348921271124009>");
     }
-	   
+	   /** 
 	      if (roll == 12) {
   message.delete(5000);
         message.channel.sendMessage("<:Dog1:693348921690292344>");
@@ -737,7 +737,7 @@ client.on('message', message => {
   message.delete(5000);
         message.channel.sendMessage("<:Cat87845:693348921107283990>");
     }
-	/**     if (roll == 12) {
+	    if (roll == 12) {
   message.delete(5000);
         message.channel.sendMessage("<:village_hero:670951166229872650>");
     }
