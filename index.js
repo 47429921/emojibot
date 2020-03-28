@@ -735,7 +735,7 @@ client.on('message', message => {
 	    
 	     if (roll == 13) {
   message.delete(5000);
-        message.channel.sendMessage("<:595031741962649610:693348921107283990>");
+        message.channel.sendMessage("<:cat8:693348921107283990>");
     }
 	/**     if (roll == 12) {
   message.delete(5000);
