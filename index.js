@@ -1,9 +1,8 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const config = require("./config.json");
-var mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/emojibot', {useNewUrlParser: true});
-var db = mongoose.connection;
+
+
 db.on('error', console.error.bind(console, 'connection error:'));
 db.once('open', function() {
   // we're connected!
@@ -13,7 +12,7 @@ const dbl = new DBL(process.env.DBL_TOKEN, { webhookPort: 5000, webhookAuth:'ZFp
 
 // Optional events
 dbl.on('posted', () => {
-  console.log('服務器數量已發布');
+  console.log('服務器數量已發布!');
 })
 
 dbl.on('error', e => {
