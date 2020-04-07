@@ -9,7 +9,7 @@ const dbl = new DBL(process.env.DBL_TOKEN, { webhookPort: 5000, webhookAuth:'ZFp
 
 // Optional events
 dbl.on('posted', () => {
-  console.log('服務器數量已發布!');
+  console.log('服務器數量已發布.');
 })
 
 dbl.on('error', e => {
