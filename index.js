@@ -9,7 +9,7 @@ const dbl = new DBL(process.env.DBL_TOKEN, { webhookPort: 5000, webhookAuth:'ZFp
 
 // Optional events
 dbl.on('posted', () => {
-  console.log('服務器數量已發布!');
+  console.log('服務器數量已發布!!');
 })
 
 dbl.on('error', e => {
@@ -42,7 +42,7 @@ client.on('ready', () => {
       'If you can please donate https://donatebot.io/checkout/642985085418733569',
       'Thanks for Fauzh#9487 Memer#4264 凱恩Kane#5384 for help',
       'Made by 青楓OuO#5224',
-'市五郎託管贊助 伺服器只要十元!! https://discord.gg/ZasrxEQ ',
+
       'Vote me now!',
       'ouo?'
   ]
