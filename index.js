@@ -4,7 +4,7 @@ const config = require("./config.json");
 
 const mongoose = require('mongoose');
 mongoose.connect('mongodb://localhost:27017/Emoji bot', {useNewUrlParser: true, useUnifiedTopology: true});
-const config = new mongoose.Schema({
+const Config = new mongoose.Schema({
 	
 	guildID: String,
 	Auto: String
@@ -61,11 +61,11 @@ client.on('ready', () => {
   }, 20000);
  
  await client.guilds.keyArray().forEach(id => {
-	 config.findone({
+	 Config.findone({
 		 guildID: id
 	 }, (guild) => {
 		 if(!guild) {
-			 const newconfig = newconfig({
+			 const newConfig = newconfig({
 				 guildID: id,
 				 Auto:'false'
 			 });
