@@ -71,7 +71,7 @@ client.on('ready', async () => {
 			 })
 			 return newconfig.save();
 			 }
-	 })
+	 }})
  });
 });
 /*setInterval(function() {
