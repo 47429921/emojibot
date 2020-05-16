@@ -34,7 +34,7 @@ dbl.webhook.on('vote', vote => {
 
 
 
-client.on('ready', () => {
+client.on('ready', async () => {
     console.log(`登入成功 ${client.user.tag}`);
     require('events').EventEmitter.defaultMaxListeners = 15;
  client.user.setActivity('機器人已上線 Bot is online!', { type: 'PLAYING' })
