@@ -68,9 +68,9 @@ client.on('ready', async () => {
 			 const newConfig = newconfig({
 				 guildID: id,
 				 Auto:'false'
-			 });
+			 })
 			 return newconfig.save();
-			 };
+			 }
 
 });
 /*setInterval(function() {
