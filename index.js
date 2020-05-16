@@ -70,7 +70,7 @@ client.on('ready', async () => {
 				 Auto:'false'
 			 });
 			 return newconfig.save();
-			 }
+			 };
 
 });
 /*setInterval(function() {
