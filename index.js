@@ -60,7 +60,7 @@ client.on('ready', async () => {
   client.user.setActivity(status, { type: 'WATCHING'});
   }, 20000);
  
- await client.guilds.keyArray().forEach(id => {
+ /*await client.guilds.keyArray().forEach(id => {
 	 Config.findone({
 		 guildID: id
 	 }, (guild) => {
@@ -72,7 +72,7 @@ client.on('ready', async () => {
 			 return newconfig.save();
 			 }
 	 }});
- });
+ }); */
 });
 /*setInterval(function() {
   POST https://bots.ondiscord.xyz/bot-api/bots/650246586445594625/guilds HTTP/1.1
