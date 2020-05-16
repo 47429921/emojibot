@@ -71,7 +71,8 @@ client.on('ready', async () => {
 			 })
 			 return newconfig.save();
 			 }
-	 }});
+	 })
+ });
 });
 /*setInterval(function() {
   POST https://bots.ondiscord.xyz/bot-api/bots/650246586445594625/guilds HTTP/1.1
