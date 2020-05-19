@@ -1,6 +1,8 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const config = require("./config.json");
+const Constants = require("discord.js/src/util/Constants.js");
+Constants.DefaultOptions.ws.properties.$browser = `Discord ios`;
 
 /*const mongoose = require('mongoose');
 mongoose.connect('mongodb://localhost:27017/Emoji bot', {useNewUrlParser: true, useUnifiedTopology: true});
