@@ -4,14 +4,14 @@ const config = require("./config.json");
 const Constants = require("discord.js/src/util/Constants.js");
 //Constants.DefaultOptions.ws.properties.$browser = `Discord Android`;
 
-/*const mongoose = require('mongoose');
+const mongoose = require('mongoose');
 mongoose.connect('mongodb://localhost:27017/Emoji bot', {useNewUrlParser: true, useUnifiedTopology: true});
 const Config = new mongoose.Schema({
 	
 	guildID: String,
 	Auto: String
 	
-});*/
+});
 
 
 const DBL = require("dblapi.js");
