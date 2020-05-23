@@ -63,7 +63,7 @@ client.on('ready', async () => {
   }, 20000);
  
  await client.guilds.keyArray().forEach(id => {
-	 Config.findOne({
+	 Config.find({
 		 guildID: id
 	 }, (guild) => {
 		 if(!guild) {
