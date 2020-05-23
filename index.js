@@ -39,7 +39,7 @@ dbl.webhook.on('vote', vote => {
 client.on('ready', async () => {
     console.log(`登入成功 ${client.user.tag}`);
     require('events').EventEmitter.defaultMaxListeners = 15;
- client.user.setActivity(/*'機器人已上線 Bot is online!'*/'Bot is offine. 機器人暫時離線', { type: 'PLAYING' })
+ client.user.setActivity('機器人已上線 Bot is online!', { type: 'PLAYING' })
   .then(presence => console.log(`目前遊玩 ${presence.game ? presence.game.name : 'none'}`))
   .catch(console.error);
   
@@ -58,7 +58,7 @@ client.on('ready', async () => {
   ]
   
   setInterval(function() {
-  let status = 'Bot is offine. 機器人暫時離線'//statuses[Math.floor(Math.random() * statuses.length)];
+  let status = statuses[Math.floor(Math.random() * statuses.length)];
   client.user.setActivity(status, { type: 'PLAYING'});
   }, 20000);
  
