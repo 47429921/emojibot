@@ -6,7 +6,7 @@ Constants.DefaultOptions.ws.properties.$browser = `Discord Android`;
 
 const mongoose = require('mongoose');
 mongoose.connect('mongodb://localhost:27017/Emoji bot', {useNewUrlParser: true, useUnifiedTopology: true});
-const Config = new mongoose.Schema({
+const emojiadd = new mongoose.Schema({
 	
 	guildID: String,
 	Auto: String
@@ -63,7 +63,7 @@ client.on('ready', async () => {
   }, 20000);
  
  await client.guilds.keyArray().forEach(id => {
-	 Config.find({
+	 emojiadd.findOne({
 		 guildID: id
 	 }, (guild) => {
 		 if(!guild) {
