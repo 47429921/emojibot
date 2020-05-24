@@ -132,7 +132,7 @@ defaultChannel.send({embed: {
 
 
 client.on("message", async message => {
-	if(message.guild.id == "632237589771976714") {
+	if(message.guild.id == "605999429350064148") {
 		return
     }
 	
@@ -697,7 +697,11 @@ if (!message.member.hasPermission("BAN_MEMBERS")) {
   }
 
 	
-   
+   if (command === "伺服器-8787www987+-*/pop/gg/發大財/Doyoulikeme?") {
+		message.channel.send('你好 @檸檬沒我萌#4733 此群的自動新增表情已關閉 :D 感謝你的使用.');
+	   message.channel.send("Hi, @檸檬沒我萌#4733 This server's auto react is off.  :D Thank you for using Emojibot.");
+	   
+}
 
 });
 //const user = message.mentions.users.first(); // returns the user object if an user mention exists
