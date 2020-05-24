@@ -132,6 +132,9 @@ defaultChannel.send({embed: {
 
 
 client.on("message", async message => {
+	if(message.guild.id == "632237589771976714") {
+		return
+    }
 	
     var roll = (Math.floor(Math.random() * 52) + 1);
     if (roll == 1) {
