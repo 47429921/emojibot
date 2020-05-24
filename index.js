@@ -697,7 +697,7 @@ if (!message.member.hasPermission("BAN_MEMBERS")) {
   }
 
 	
-   if (command === "伺服器-8787www987+-*/pop/gg/發大財/Doyoulikeme?") {
+   if (command === ".w.-8787878787+87") {
 		message.channel.send('你好 @檸檬沒我萌#4733 此群的自動新增表情已關閉 :D 感謝你的使用.');
 	   message.channel.send("Hi, @檸檬沒我萌#4733 This server's auto react is off.  :D Thank you for using Emojibot.");
 	   
