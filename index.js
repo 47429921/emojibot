@@ -761,7 +761,7 @@ client.on('message', message => {
 	   
 	      if (roll == 12) {
   message.delete(5000);
-        message.channel.sendMessage("<a:test:716172051018416149>");
+        message.channel.sendMessage("<a:test:643004985642188800>");
     }
 	  /**   
 	     if (roll == 13) {
