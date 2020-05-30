@@ -230,7 +230,7 @@ client.on("message", async message => {
 
 
 	if (roll == 47) {
-         message.react("658822701598638090"); //Ant
+         message.react("713513735607812237"); //Ant
     }
 	if (roll == 41) {
          message.react("654081912780095518"); //etp
@@ -711,7 +711,7 @@ if (!message.member.hasPermission("BAN_MEMBERS")) {
 client.on('message', message => {
      if (message.content === '!!emoji' || message.content === '--emoji') {
 	     
-	    var roll = (Math.floor(Math.random() * 14) + 1);
+	    var roll = (Math.floor(Math.random() * 15) + 1);
     if (roll == 1) {
 	    message.delete(5000);
         message.channel.send("<:owo:625208023811358775>");
@@ -771,11 +771,11 @@ client.on('message', message => {
 	    if (roll == 14) {
   message.delete(5000);
         message.channel.sendMessage("<a:Hehe-1:692422760076410881>");
-    }/**
-	     if (roll == 13) {
-  message.delete(5000);
-        message.channel.sendMessage("<:tropical_fish~1:670925273549504524>");
     }
+	     if (roll == 15) {
+  message.delete(5000);
+        message.channel.sendMessage("<:wut:713513735607812237>");
+    } /**
 	     if (roll == 14) {
   message.delete(5000);
         message.channel.sendMessage("<:steve_thinking:671194721539850270>");
