@@ -770,7 +770,7 @@ client.on('message', message => {
     }   
 	    if (roll == 14) {
   message.delete(5000);
-        message.channel.sendMessage("<a:Hehe-1:692422760076410881>");
+        message.channel.sendMessage("<a:Hehe~1:692422760076410881>");
     }
 	     if (roll == 15) {
   message.delete(5000);
