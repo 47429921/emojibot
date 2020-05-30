@@ -711,7 +711,7 @@ if (!message.member.hasPermission("BAN_MEMBERS")) {
 client.on('message', message => {
      if (message.content === '!!emoji' || message.content === '--emoji') {
 	     
-	    var roll = (Math.floor(Math.random() * 13) + 1);
+	    var roll = (Math.floor(Math.random() * 12) + 1);
     if (roll == 1) {
 	    message.delete(5000);
         message.channel.send("<:owo:625208023811358775>");
@@ -853,7 +853,7 @@ client.on('message', message => {
         message.channel.sendMessage("<:apple~1:670924077799833626>");
     }
 	**/
-    }
+    
    /** else{
         const voteEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
@@ -870,7 +870,7 @@ client.on('message', message => {
 
 	
   
-	);
+	
 	
 
 }});
