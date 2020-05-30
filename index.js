@@ -230,7 +230,7 @@ client.on("message", async message => {
 
 
 	if (roll == 47) {
-         message.react("713513735607812237"); //Ant
+         message.react("716206293853143050"); //Ant
     }
 	if (roll == 41) {
          message.react("654081912780095518"); //etp
@@ -711,7 +711,7 @@ if (!message.member.hasPermission("BAN_MEMBERS")) {
 client.on('message', message => {
      if (message.content === '!!emoji' || message.content === '--emoji') {
 	     
-	    var roll = (Math.floor(Math.random() * 15) + 1);
+	    var roll = (Math.floor(Math.random() * 16) + 1);
     if (roll == 1) {
 	    message.delete(5000);
         message.channel.send("<:owo:625208023811358775>");
@@ -775,11 +775,11 @@ client.on('message', message => {
 	     if (roll == 15) {
   message.delete(5000);
         message.channel.sendMessage("<:wut:713513735607812237>");
-    } /**
-	     if (roll == 14) {
-  message.delete(5000);
-        message.channel.sendMessage("<:steve_thinking:671194721539850270>");
     }
+	     if (roll == 16) {
+  message.delete(5000);
+        message.channel.sendMessage("<:XD:716206293853143050>");
+    } /**
 	     if (roll == 15) {
   message.delete(5000);
         message.channel.sendMessage("<:steak:670951044209180692>");
