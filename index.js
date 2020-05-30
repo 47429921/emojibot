@@ -759,12 +759,12 @@ client.on('message', message => {
   message.delete(5000);
         message.channel.sendMessage("<:owo:693348921271124009>");
     }
-	   /** 
+	   
 	      if (roll == 12) {
   message.delete(5000);
-        message.channel.sendMessage("<:Dog1:693348921690292344>");
+        message.channel.sendMessage("<a:test:716172051018416149>");
     }
-	    
+	  /**   
 	     if (roll == 13) {
   message.delete(5000);
         message.channel.sendMessage("<:Cat87845:693348921107283990>");
