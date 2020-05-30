@@ -197,7 +197,7 @@ client.on("message", async message => {
         message.react("693348921271124009");
     }
 	if (roll == 20) {
-        //blank
+         message.react("715538193126129704");
     }
 	if (roll == 21) {
         //blank
