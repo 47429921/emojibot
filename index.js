@@ -711,7 +711,7 @@ if (!message.member.hasPermission("BAN_MEMBERS")) {
 client.on('message', message => {
      if (message.content === '!!emoji' || message.content === '--emoji') {
 	     
-	    var roll = (Math.floor(Math.random() * 12) + 1);
+	    var roll = (Math.floor(Math.random() * 14) + 1);
     if (roll == 1) {
 	    message.delete(5000);
         message.channel.send("<:owo:625208023811358775>");
@@ -763,15 +763,15 @@ client.on('message', message => {
   message.delete(5000);
         message.channel.sendMessage("<a:test:643004985642188800>");
     }
-	  /**   
+	   
 	     if (roll == 13) {
   message.delete(5000);
-        message.channel.sendMessage("<:Cat87845:693348921107283990>");
-    }
-	    if (roll == 12) {
+        message.channel.sendMessage("<a:slime:715538193126129704>");
+    }   
+	    if (roll == 14) {
   message.delete(5000);
-        message.channel.sendMessage("<:village_hero:670951166229872650>");
-    }
+        message.channel.sendMessage("<a:Hehe-1:692422760076410881>");
+    }/**
 	     if (roll == 13) {
   message.delete(5000);
         message.channel.sendMessage("<:tropical_fish~1:670925273549504524>");
