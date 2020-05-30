@@ -710,8 +710,7 @@ if (!message.member.hasPermission("BAN_MEMBERS")) {
 
 client.on('message', message => {
      if (message.content === '!!emoji' || message.content === '--emoji') {
-	     dbl.hasVoted(`${message.author.id}`).then(voted => {
-    if (voted) {
+	     
 	    var roll = (Math.floor(Math.random() * 13) + 1);
     if (roll == 1) {
 	    message.delete(5000);
@@ -855,7 +854,7 @@ client.on('message', message => {
     }
 	**/
     }
-    else{
+   /** else{
         const voteEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
 	.setTitle('Emoji')
@@ -867,7 +866,7 @@ client.on('message', message => {
 	.setFooter('由 青楓OuO#5224 製作/Made by 青楓OuO#5224', 'https://yt3.ggpht.com/-HZiKlwM2SWA/AAAAAAAAAAI/AAAAAAAAAAA/w_a9sYsYiOE/s108-c-k-c0x00ffffff-no-rj-mo/photo.jpg');
 	message.channel.send(voteEmbed);
 	   
-        }
+        }**/
 
 	
      })
