@@ -870,7 +870,7 @@ client.on('message', message => {
 
 	
   
-	
+	);
 	
 
 }});
