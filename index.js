@@ -209,7 +209,7 @@ client.on("message", async message => {
         //blank
     }
 	if (roll == 24) {
-        message.react("658823603361415168"); //Ant
+        message.react("716532491422400533"); //Ant
     }
 	if (roll == 25) {
         //blank
@@ -711,7 +711,7 @@ if (!message.member.hasPermission("BAN_MEMBERS")) {
 client.on('message', message => {
      if (message.content === '!!emoji' || message.content === '--emoji') {
 	     
-	    var roll = (Math.floor(Math.random() * 16) + 1);
+	    var roll = (Math.floor(Math.random() * 17) + 1);
     if (roll == 1) {
 	    message.delete(5000);
         message.channel.send("<:owo:625208023811358775>");
@@ -779,11 +779,11 @@ client.on('message', message => {
 	     if (roll == 16) {
   message.delete(5000);
         message.channel.sendMessage("<:XD:716206293853143050>");
-    } /**
-	     if (roll == 15) {
+    } 
+	     if (roll == 17) {
   message.delete(5000);
-        message.channel.sendMessage("<:steak:670951044209180692>");
-    }
+        message.channel.sendMessage("<:ouo87:716532491422400533>");
+    }/**
 	     if (roll == 16) {
   message.delete(5000);
         message.channel.sendMessage("<:sky_studio_logo:670887659798921266>");
