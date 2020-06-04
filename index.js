@@ -511,19 +511,22 @@ client.on("message", async message => {
   }
 	if (command === "react-set"){
 		const set = args.join(" ");
+		let tf = {
+			
+		};
 		if(!set) {
 	return	message.reply('你需要選擇 True 或 false.');
 		}
 		
 		if(set === "true") {
-	return	message.reply('Test true');
+	       fs.writeFile("./setting.json", JSON.stringify(`message.guild.id`, set: 'true')
 		}
 		
 		if(set === "false") {
 	return	message.reply('Test no but good');
 		}
 		
-		message.channel.send('test over!')
+		message.channel.send('你需要選擇 **true** 或 **false**!')
 		
 		
  
