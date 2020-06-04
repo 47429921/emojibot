@@ -4,8 +4,6 @@ const config = require("./config.json");
 const Constants = require("discord.js/src/util/Constants.js");
 Constants.DefaultOptions.ws.properties.$browser = `Discord Android`;
 const fs = require('fs');
-const client = new Discord.Client();
-client.commands = new Discord.Collection();
 const mongoose = require('mongoose');
 mongoose.connect('mongodb://localhost:27017/Emoji bot', {useNewUrlParser: true, useUnifiedTopology: true});
 const emojiadd = new mongoose.Schema({
