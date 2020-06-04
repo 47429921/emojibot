@@ -519,7 +519,7 @@ client.on("message", async message => {
 		}
 		
 		if(set === "true") {
-	       fs.writeFile("./setting.json", JSON.stringify(`message.guild.id`, 'settingw: "true"')
+	       fs.writeFile("./setting.json", JSON.stringify(`message.guild.id`, 'settingw: "true"'));
 		}
 		
 		if(set === "false") {
