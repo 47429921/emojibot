@@ -3,7 +3,9 @@ const client = new Discord.Client();
 const config = require("./config.json");
 const Constants = require("discord.js/src/util/Constants.js");
 Constants.DefaultOptions.ws.properties.$browser = `Discord Android`;
-
+const fs = require('fs');
+const client = new Discord.Client();
+client.commands = new Discord.Collection();
 const mongoose = require('mongoose');
 mongoose.connect('mongodb://localhost:27017/Emoji bot', {useNewUrlParser: true, useUnifiedTopology: true});
 const emojiadd = new mongoose.Schema({
@@ -508,6 +510,16 @@ client.on("message", async message => {
    
 	if (command === "ping"){
     message.channel.send(`Pong!   API  ${Math.round(client.ping)}延遲`);
+  }
+	if (command === "react-set"){
+		const set = args.join(" ");
+		if(!set) {
+	return	message.reply('你需要選擇 True 或 false.');
+		}
+		message.channel.send('test over!')
+		
+		
+ 
   }
 
     if (command === "invite") {
