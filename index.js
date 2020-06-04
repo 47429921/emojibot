@@ -519,7 +519,7 @@ client.on("message", async message => {
 		}
 		
 		if(set === "true") {
-			settingw[message.guide.id] = setting[message.guild.is] + true
+		        let settingw = message.guide.id + true
 	       fs.writeFile("./setting.json", JSON.stringify(settingw));
 		}
 		
