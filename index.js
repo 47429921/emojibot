@@ -514,6 +514,15 @@ client.on("message", async message => {
 		if(!set) {
 	return	message.reply('你需要選擇 True 或 false.');
 		}
+		
+		if(!set === "true") {
+	return	message.reply('Test true');
+		}
+		
+		if(!set === "false") {
+	return	message.reply('Test no but good');
+		}
+		
 		message.channel.send('test over!')
 		
 		
