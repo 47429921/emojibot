@@ -515,11 +515,11 @@ client.on("message", async message => {
 	return	message.reply('你需要選擇 True 或 false.');
 		}
 		
-		if(!set === "true") {
+		if(set === "true") {
 	return	message.reply('Test true');
 		}
 		
-		if(!set === "false") {
+		if(set === "false") {
 	return	message.reply('Test no but good');
 		}
 		
