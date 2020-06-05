@@ -521,7 +521,7 @@ client.on("message", async message => {
 		if(set === "true") {
 		  const data = new Uint8Array(Buffer.from('Hello Node.js'));
 fs.writeFile('setting.txt', 'test', 'utf8', callback);
-		
+		};
 		if(set === "false") {
 	return	message.reply('Test no but good');
 		}
