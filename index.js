@@ -525,7 +525,7 @@ fs.writeFile('setting.json', data, (err) => {
   if (err) throw err;
   
 });
-			return message.channel.send(data)
+			return message.channel.send('Added!')
 		};	
 		
 		if(set === "false") {
