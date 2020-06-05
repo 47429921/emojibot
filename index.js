@@ -526,7 +526,7 @@ client.on("message", async message => {
 };
  
 let data = JSON.stringify(w);
-fs.writeFile('setting.json', data, (err) => {
+fs.writeFile('./setting.json', data, (err) => {
     if (err) throw err;
     message.channel.send('Data written to file');
 });
