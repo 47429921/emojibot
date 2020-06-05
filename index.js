@@ -520,12 +520,13 @@ client.on("message", async message => {
 		
 		if(set == "true") {
 			
-		  const data = 'ouo';   //new Uint8Array(Buffer.from('Hello Node.js'));
-fs.writeFile('setting.json', 'ouo', callback, (err) => {
-  if (err) console.log(err);
-  
-});
-			return message.channel.send('Added!')
+		 let student = { 
+    Guild:`${message.guild.id}`,
+    Set:'true'
+};
+ 
+let data = JSON.stringify(student, null, 2);
+fs.writeFileSync('student-2.json', data);
 		};	
 		
 		if(set === "false") {
