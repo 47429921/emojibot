@@ -519,13 +519,12 @@ client.on("message", async message => {
 		}
 		
 		if(set == "true") {
-			
-		 let w = { 
-    Guild:`${message.guild.id}`,
+			let lol87 = JSON.parse(fs.readFileSync('./setting.json', 'utf8'))
+		  lol87[message.guild.id] = { 
     Set:'true'
 };
  
-let data = JSON.stringify(w);
+let data = JSON.stringify(lol87);
 fs.writeFile('./setting.json', data, (err) => {
     if (err) throw err;
     message.channel.send('Data written to file');
