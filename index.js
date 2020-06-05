@@ -519,12 +519,8 @@ client.on("message", async message => {
 		}
 		
 		if(set === "true") {
-		   /* let setting = {
-			Guild: message.guild.id
-			setting: true    
-		    }
-	       fs.writeFile("./setting.json", JSON.stringify(setting));*/
-		}
+		  const data = new Uint8Array(Buffer.from('Hello Node.js'));
+fs.writeFile('setting.txt', 'test', 'utf8', callback);
 		
 		if(set === "false") {
 	return	message.reply('Test no but good');
