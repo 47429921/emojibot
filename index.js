@@ -520,16 +520,14 @@ client.on("message", async message => {
 		
 		if(set == "true") {
 			
-		  const data = new Uint8Array(Buffer.from('Hello Node.js'));
-fs.writeFile('setting.json', data, (err) => {
-  if (err) throw err;
-  console.log('The file has been saved!');
-});
-		}	
+		  let data = new Uint8Array(Buffer.from('Hello Node.js'));
+fs.writeFile('setting.json', data)
+			return
+		};	
 		
 		if(set === "false") {
 	return	message.reply('Test no but good');
-		}
+		};
 		
 		message.channel.send('你需要選擇 **true** 或 **false**!')
 		
