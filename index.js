@@ -527,6 +527,8 @@ client.on("message", async message => {
  
 let data = JSON.stringify(student, null, 2);
 fs.writeFileSync('student-2.json', data);
+			
+			return
 		};	
 		
 		if(set === "false") {
