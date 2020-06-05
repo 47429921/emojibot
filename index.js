@@ -520,13 +520,16 @@ client.on("message", async message => {
 		
 		if(set == "true") {
 			
-		 let student = { 
+		 let w = { 
     Guild:`${message.guild.id}`,
     Set:'true'
 };
  
-let data = JSON.stringify(student, null, 2);
-fs.writeFileSync('setting.json', data);
+let data = JSON.stringify(w, null, 2);
+fs.writeFile('setting.json', data, (err) => {
+    if (err) throw err;
+    message.channel.send('Data written to file');
+});
 			
 			return
 		};	
