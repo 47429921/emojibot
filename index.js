@@ -522,7 +522,7 @@ client.on("message", async message => {
 			
 		  const data = 'ouo';   //new Uint8Array(Buffer.from('Hello Node.js'));
 fs.writeFile('setting.json', data, (err) => {
-  if (err) throw err;
+  if (err) console.log(err);
   
 });
 			return message.channel.send('Added!')
