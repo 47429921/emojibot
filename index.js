@@ -520,9 +520,12 @@ client.on("message", async message => {
 		
 		if(set == "true") {
 			
-		  let data = new Uint8Array(Buffer.from('Hello Node.js'));
-fs.writeFile('setting.json', data)
-			return
+		  const data = new Uint8Array(Buffer.from('Hello Node.js'));
+fs.writeFile('setting.json', data, (err) => {
+  if (err) throw err;
+  
+});
+			return message.channel.send(data)
 		};	
 		
 		if(set === "false") {
