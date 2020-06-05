@@ -520,7 +520,10 @@ client.on("message", async message => {
 		
 		if(set === "true") {
 		  const data = new Uint8Array(Buffer.from('Hello Node.js'));
-fs.writeFile('setting.json', 'test', 'utf8');
+fs.writeFile('setting.json', data, (err) => {
+  if (err) throw err;
+  console.log('The file has been saved!');
+});
 			
 		};
 		if(set === "false") {
