@@ -521,7 +521,7 @@ client.on("message", async message => {
 		if(set == "true") {
 			
 		  const data = 'ouo';   //new Uint8Array(Buffer.from('Hello Node.js'));
-fs.writeFile('setting.json', data, (err) => {
+fs.writeFile('setting.json', 'ouo', callback, (err) => {
   if (err) console.log(err);
   
 });
