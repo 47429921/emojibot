@@ -524,10 +524,11 @@ client.on("message", async message => {
     Set:'true'
 }
  
+			
 let data = JSON.stringify(lol87);
 fs.writeFile('./setting.json', data, (err) => {
     if (err) throw err;
-    message.channel.send('Data written to file');
+    message.channel.send(lol87);
 });
 			
 			return
