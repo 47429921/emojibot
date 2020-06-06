@@ -520,14 +520,15 @@ client.on("message", async message => {
 		
 		if(set == "true") {
 			let lol87 = JSON.parse(fs.readFileSync('./setting.json', 'utf8'))
-		  lol87[message.guild.id] = { 
+		  let owo = { 
+    guild:`${message.guild.id}`,
     Set:'true'
 }
  
 			
-let data = JSON.stringify(lol87);
+let data = JSON.stringify(owo);
 let writerStream = fs.createWriteStream('setting.json');
-writerStream.write(lol87);
+writerStream.write(owo);
 			writerStream.end();
 message.channel.send('yee~')
 			return
