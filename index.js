@@ -526,11 +526,10 @@ client.on("message", async message => {
  
 			
 let data = JSON.stringify(lol87);
-fs.writeFile('./setting.json', data, (err) => {
-    if (err) throw err;
-    message.channel.send(lol87);
-});
-			
+let writerStream = fs.createWriteStream('setting.json');
+writerStream.write(lol87);
+			writerStream.end();
+message.channel.send('yee~')
 			return
 		};	
 		
