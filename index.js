@@ -521,7 +521,7 @@ client.on("message", async message => {
 		if(set == "true") {
 			let lol87 = JSON.parse(fs.readFileSync('./setting.json', 'utf8'))
 		lol87 = { 
-    ${message.guild.id}:true
+    test:"true"
 }
  
 			
