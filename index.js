@@ -522,7 +522,7 @@ client.on("message", async message => {
 			let lol87 = JSON.parse(fs.readFileSync('./setting.json', 'utf8'))
 		  lol87[message.guild.id] = { 
     Set:'true'
-};
+}
  
 let data = JSON.stringify(lol87);
 fs.writeFile('./setting.json', data, (err) => {
